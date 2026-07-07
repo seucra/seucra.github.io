@@ -15,7 +15,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       background-color: #110e08;
       color: #f0e4d1;
-      line-height: 1.6;
+      line-height: 1.8;
     }
 
     a {
@@ -35,30 +35,33 @@
 
     header {
       text-align: center;
-      padding: 4rem 0;
+      padding: 5rem 0;
       border-bottom: 1px solid #4e4739;
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.75rem;
       color: #dfc387;
     }
 
     .tagline {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #b4aa98;
     }
 
     section {
-      margin-bottom: 4rem;
+      margin-bottom: 4.5rem;
     }
 
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
+      font-size: 1.9rem;
+      margin-bottom: 1.75rem;
       color: #dfc387;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
     }
 
     .intro-text {
@@ -67,48 +70,125 @@
       color: #f0e4d1;
     }
 
+    .quote-section {
+      background-color: #1d1910;
+      padding: 2.5rem;
+      border-radius: 1rem;
+      border-left: 4px solid #dfc387;
+      margin-bottom: 3rem;
+    }
+
+    .quote-text {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #fde0a1;
+      margin-bottom: 1rem;
+    }
+
+    .quote-author {
+      color: #b4aa98;
+    }
+
     .hobbies-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1.5rem;
+      gap: 1.75rem;
     }
 
     .hobby-card {
       background-color: #1d1910;
-      padding: 1.5rem;
-      border-radius: 0.75rem;
+      padding: 1.75rem;
+      border-radius: 1rem;
       border: 1px solid #4e4739;
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease, border-color 0.3s ease;
     }
 
     .hobby-card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
       border-color: #7d7464;
     }
 
     .hobby-card h3 {
       color: #d7c5a0;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .fun-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .fun-fact {
+      background-color: #241f15;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      border: 1px dashed #4e4739;
+    }
+
+    .fun-fact-icon {
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .goals-dreams {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .goals-card, .dreams-card {
+      background-color: #1d1910;
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 1px solid #4e4739;
+    }
+
+    .goals-card h3, .dreams-card h3 {
+      color: #d7c5a0;
+      margin-bottom: 1.25rem;
+    }
+
+    .goals-card ul, .dreams-card ul {
+      list-style: none;
+    }
+
+    .goals-card li, .dreams-card li {
+      padding: 0.5rem 0;
+      padding-left: 1.75rem;
+      position: relative;
+    }
+
+    .goals-card li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+    }
+
+    .dreams-card li::before {
+      content: "🌟";
+      position: absolute;
+      left: 0;
     }
 
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
+      gap: 1.75rem;
     }
 
     .project-card {
       background-color: #1d1910;
-      border-radius: 0.75rem;
+      border-radius: 1rem;
       overflow: hidden;
       border: 1px solid #4e4739;
       cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
       border-color: #dfc387;
     }
 
@@ -120,11 +200,11 @@
       align-items: center;
       justify-content: center;
       color: #b4aa98;
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
 
     .project-content {
-      padding: 1.5rem;
+      padding: 1.75rem;
     }
 
     .project-content h3 {
@@ -139,18 +219,20 @@
 
     footer {
       text-align: center;
-      padding: 2rem 0;
+      padding: 2.5rem 0;
       border-top: 1px solid #4e4739;
       color: #7d7464;
     }
 
     @media (max-width: 768px) {
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
       
       .projects-grid,
-      .hobbies-grid {
+      .hobbies-grid,
+      .fun-facts,
+      .goals-dreams {
         grid-template-columns: 1fr;
       }
     }
@@ -160,42 +242,91 @@
   <div class="container">
     <header>
       <h1>Your Name</h1>
-      <p class="tagline">Computer Science Student | Tech Enthusiast</p>
+      <p class="tagline">Computer Science Student | Curious Soul | Code & Coffee ☕</p>
     </header>
 
+    <div class="quote-section">
+      <p class="quote-text">"The best way to predict the future is to create it."</p>
+      <p class="quote-author">— Someone wise, probably</p>
+    </div>
+
     <section class="intro">
-      <h2>About Me</h2>
+      <h2>Hello There! 👋</h2>
       <p class="intro-text">
-        I'm a passionate Computer Science student with a love for technology and problem-solving. 
-        I enjoy working on projects that challenge me and help me learn new things. 
-        This portfolio showcases some of my work and interests.
+        Welcome to my little corner of the internet! I'm a Computer Science student who believes that code can be both powerful and playful. I love learning new things, building silly projects that make me smile, and figuring out how stuff works under the hood.
       </p>
     </section>
 
+    <section class="fun-facts-section">
+      <h2>Random Tidbits 🎲</h2>
+      <div class="fun-facts">
+        <div class="fun-fact">
+          <div class="fun-fact-icon">☕</div>
+          <p>Fueled by an unhealthy amount of coffee and curiosity</p>
+        </div>
+        <div class="fun-fact">
+          <div class="fun-fact-icon">📚</div>
+          <p>Always reading 3 books at once (and finishing none)</p>
+        </div>
+        <div class="fun-fact">
+          <div class="fun-fact-icon">🎵</div>
+          <p>Coding with lo-fi beats in the background is mandatory</p>
+        </div>
+        <div class="fun-fact">
+          <div class="fun-fact-icon">🌱</div>
+          <p>Trying to grow plants (and slowly succeeding!)</p>
+        </div>
+      </div>
+    </section>
+
     <section class="hobbies">
-      <h2>Hobbies & Interests</h2>
+      <h2>Hobbies & Interests 🎨</h2>
       <div class="hobbies-grid">
         <div class="hobby-card">
           <h3>Programming</h3>
-          <p>Exploring different programming languages and building cool projects.</p>
+          <p>Exploring different programming languages and building projects that spark joy.</p>
         </div>
         <div class="hobby-card">
           <h3>Web Development</h3>
-          <p>Creating interactive and responsive websites with modern technologies.</p>
+          <p>Creating interactive and responsive websites that are both functional and pretty.</p>
         </div>
         <div class="hobby-card">
           <h3>Open Source</h3>
-          <p>Contributing to and learning from open-source projects.</p>
+          <p>Contributing to and learning from amazing open-source communities.</p>
         </div>
         <div class="hobby-card">
           <h3>Learning</h3>
-          <p>Always curious about new technologies and concepts in CS.</p>
+          <p>Always chasing that "aha!" moment when something clicks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="goals-dreams-section">
+      <h2>Goals & Dreams 🌈</h2>
+      <div class="goals-dreams">
+        <div class="goals-card">
+          <h3>Short-term Goals</h3>
+          <ul>
+            <li>Learn one new programming language this year</li>
+            <li>Contribute to 3 open-source projects</li>
+            <li>Build something that helps someone</li>
+            <li>Drink more water (important!)</li>
+          </ul>
+        </div>
+        <div class="dreams-card">
+          <h3>Big Dreams</h3>
+          <ul>
+            <li>Work on projects that make a positive impact</li>
+            <li>Travel to places I've only read about</li>
+            <li>Keep learning and growing every day</li>
+            <li>Have a never-ending supply of good books</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section class="projects">
-      <h2>Projects</h2>
+      <h2>Projects 🛠️</h2>
       <div class="projects-grid">
         <a href="https://example.com" target="_blank" rel="noopener noreferrer">
           <div class="project-card">
@@ -228,7 +359,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <p>Made with ❤️ and ☕ &copy; 2024 Your Name</p>
     </footer>
   </div>
 </body>
