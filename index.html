@@ -11,119 +11,292 @@
       box-sizing: border-box;
     }
 
+    :root {
+      --background: #0b0f0d;
+      --onBackground: #dde8e1;
+      --surface: #0b0f0d;
+      --surfaceContainer: #141b18;
+      --surfaceContainerHighest: #1e2823;
+      --onSurface: #dde8e1;
+      --surfaceVariant: #1e2823;
+      --onSurfaceVariant: #a3aea7;
+      --outline: #6e7872;
+      --outlineVariant: #404a45;
+      --primary: #a1d1ba;
+      --onPrimary: #1a4837;
+      --primaryContainer: #2e5b49;
+      --onPrimaryContainer: #bdeed7;
+      --secondary: #b3ccbf;
+      --onSecondary: #2e453b;
+      --secondaryContainer: #2a4036;
+      --tertiary: #e3fbff;
+      --onTertiary: #2c656e;
+      --error: #fa746f;
+      --onError: #490006;
+      --text: #dde8e1;
+      --subtext1: #a3aea7;
+      --subtext0: #6e7872;
+      --overlay2: #606964;
+      --overlay1: #515954;
+      --overlay0: #444b47;
+      --surface2: #363d39;
+      --surface1: #292e2b;
+      --surface0: #1a1f1c;
+      --base: #0b0f0d;
+      --mantle: #0b0f0d;
+      --crust: #0a0e0c;
+      --green: #9cf1c6;
+      --teal: #a5eed3;
+      --sky: #98ebd4;
+      --blue: #59cfc3;
+      --lavender: #84dcd5;
+      --yellow: #daf9db;
+      --peach: #aed9a6;
+      --mauve: #5bd0df;
+      --pink: #bae2ff;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      background-color: #110e08;
-      color: #f0e4d1;
+      background-color: var(--background);
+      color: var(--text);
       line-height: 1.8;
     }
 
     a {
-      color: #dfc387;
+      color: var(--primary);
       text-decoration: none;
+      transition: color 0.2s ease;
     }
 
     a:hover {
+      color: var(--teal);
       text-decoration: underline;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 280px;
+      background-color: var(--surfaceContainer);
+      border-right: 1px solid var(--outlineVariant);
       padding: 2rem 1.5rem;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .sidebar-profile {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--outlineVariant);
+    }
+
+    .sidebar-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--teal));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 1rem;
+    }
+
+    .sidebar-name {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .sidebar-tagline {
+      font-size: 0.9rem;
+      color: var(--subtext1);
+    }
+
+    .sidebar-nav {
+      margin-bottom: 2rem;
+    }
+
+    .sidebar-nav-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--subtext0);
+      margin-bottom: 0.75rem;
+    }
+
+    .sidebar-nav-list {
+      list-style: none;
+    }
+
+    .sidebar-nav-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .sidebar-nav-list a {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      color: var(--onSurface);
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-nav-list a:hover {
+      background-color: var(--surfaceContainerHighest);
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .sidebar-social {
+      margin-bottom: 2rem;
+    }
+
+    .sidebar-social-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--subtext0);
+      margin-bottom: 0.75rem;
+    }
+
+    .sidebar-social-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .sidebar-social-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 0.5rem;
+      background-color: var(--surfaceContainerHighest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-social-link:hover {
+      background-color: var(--primaryContainer);
+      transform: translateY(-2px);
+    }
+
+    .main-content {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
     }
 
     header {
-      text-align: center;
-      padding: 5rem 0;
-      border-bottom: 1px solid #4e4739;
-      margin-bottom: 3.5rem;
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--outlineVariant);
+      margin-bottom: 3rem;
     }
 
     h1 {
       font-size: 2.8rem;
       margin-bottom: 0.75rem;
-      color: #dfc387;
+      color: var(--primary);
     }
 
     .tagline {
       font-size: 1.2rem;
-      color: #b4aa98;
+      color: var(--subtext1);
     }
 
     section {
-      margin-bottom: 4.5rem;
+      margin-bottom: 4rem;
     }
 
     h2 {
-      font-size: 1.9rem;
-      margin-bottom: 1.75rem;
-      color: #dfc387;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
       display: flex;
       align-items: center;
       gap: 0.75rem;
     }
 
+    h3 {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
     .intro-text {
       font-size: 1.1rem;
-      max-width: 800px;
-      color: #f0e4d1;
+      color: var(--text);
     }
 
     .quote-section {
-      background-color: #1d1910;
+      background-color: var(--surfaceContainer);
       padding: 2.5rem;
       border-radius: 1rem;
-      border-left: 4px solid #dfc387;
+      border-left: 4px solid var(--primary);
       margin-bottom: 3rem;
     }
 
     .quote-text {
       font-size: 1.3rem;
       font-style: italic;
-      color: #fde0a1;
+      color: var(--onPrimaryContainer);
       margin-bottom: 1rem;
     }
 
     .quote-author {
-      color: #b4aa98;
+      color: var(--subtext1);
     }
 
     .hobbies-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1.75rem;
+      gap: 1.5rem;
     }
 
     .hobby-card {
-      background-color: #1d1910;
+      background-color: var(--surfaceContainer);
       padding: 1.75rem;
       border-radius: 1rem;
-      border: 1px solid #4e4739;
-      transition: transform 0.3s ease, border-color 0.3s ease;
+      border: 1px solid var(--outlineVariant);
+      transition: all 0.3s ease;
     }
 
     .hobby-card:hover {
       transform: translateY(-5px);
-      border-color: #7d7464;
+      border-color: var(--primary);
+      background-color: var(--surfaceContainerHighest);
     }
 
     .hobby-card h3 {
-      color: #d7c5a0;
       margin-bottom: 0.75rem;
     }
 
     .fun-facts {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 1.5rem;
     }
 
     .fun-fact {
-      background-color: #241f15;
+      background-color: var(--surfaceContainer);
       padding: 1.5rem;
       border-radius: 0.75rem;
-      border: 1px dashed #4e4739;
+      border: 1px dashed var(--outlineVariant);
     }
 
     .fun-fact-icon {
@@ -133,20 +306,15 @@
 
     .goals-dreams {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.75rem;
     }
 
     .goals-card, .dreams-card {
-      background-color: #1d1910;
+      background-color: var(--surfaceContainer);
       padding: 2rem;
       border-radius: 1rem;
-      border: 1px solid #4e4739;
-    }
-
-    .goals-card h3, .dreams-card h3 {
-      color: #d7c5a0;
-      margin-bottom: 1.25rem;
+      border: 1px solid var(--outlineVariant);
     }
 
     .goals-card ul, .dreams-card ul {
@@ -171,57 +339,178 @@
       left: 0;
     }
 
+    .personal-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .personal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .personal-item {
+      background-color: var(--surfaceContainer);
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+      border: 1px solid var(--outlineVariant);
+    }
+
+    .personal-item-title {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+
+    .personal-item-desc {
+      font-size: 0.9rem;
+      color: var(--subtext1);
+    }
+
+    .project-category {
+      margin-bottom: 3rem;
+    }
+
+    .category-title {
+      font-size: 1.4rem;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.75rem;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
 
     .project-card {
-      background-color: #1d1910;
+      background-color: var(--surfaceContainer);
       border-radius: 1rem;
       overflow: hidden;
-      border: 1px solid #4e4739;
+      border: 1px solid var(--outlineVariant);
       cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .project-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-      border-color: #dfc387;
+      border-color: var(--primary);
     }
 
     .project-image {
       width: 100%;
-      height: 180px;
-      background-color: #241f15;
+      height: 160px;
+      background-color: var(--surfaceContainerHighest);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #b4aa98;
-      font-size: 3.5rem;
+      color: var(--subtext1);
+      font-size: 3rem;
     }
 
     .project-content {
-      padding: 1.75rem;
+      padding: 1.5rem;
     }
 
     .project-content h3 {
-      color: #d7c5a0;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
     }
 
     .project-content p {
-      color: #b4aa98;
+      color: var(--subtext1);
       font-size: 0.95rem;
     }
 
     footer {
+      background-color: var(--surfaceContainer);
+      border-top: 1px solid var(--outlineVariant);
+      padding: 3rem 2rem;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h4 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: var(--subtext1);
+      font-size: 0.95rem;
+    }
+
+    .footer-bottom {
       text-align: center;
-      padding: 2.5rem 0;
-      border-top: 1px solid #4e4739;
-      color: #7d7464;
+      padding-top: 2rem;
+      border-top: 1px solid var(--outlineVariant);
+      color: var(--subtext0);
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-social-link {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--surfaceContainerHighest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: all 0.2s ease;
+    }
+
+    .footer-social-link:hover {
+      background-color: var(--primaryContainer);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 1024px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid var(--outlineVariant);
+      }
+
+      .sidebar-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
     }
 
     @media (max-width: 768px) {
@@ -232,135 +521,360 @@
       .projects-grid,
       .hobbies-grid,
       .fun-facts,
-      .goals-dreams {
+      .goals-dreams,
+      .personal-grid {
         grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 2rem 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Your Name</h1>
-      <p class="tagline">Computer Science Student | Curious Soul | Code & Coffee ☕</p>
-    </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <div class="sidebar-avatar">👨‍💻</div>
+        <div class="sidebar-name">Your Name</div>
+        <div class="sidebar-tagline">CS Student & Creator</div>
+      </div>
 
-    <div class="quote-section">
-      <p class="quote-text">"The best way to predict the future is to create it."</p>
-      <p class="quote-author">— Someone wise, probably</p>
-    </div>
+      <nav class="sidebar-nav">
+        <div class="sidebar-nav-title">Navigation</div>
+        <ul class="sidebar-nav-list">
+          <li><a href="#intro"><span>👋</span> About</a></li>
+          <li><a href="#hobbies"><span>🎨</span> Hobbies</a></li>
+          <li><a href="#personal"><span>🎮</span> Personal</a></li>
+          <li><a href="#goals"><span>🌈</span> Goals</a></li>
+          <li><a href="#projects"><span>🛠️</span> Projects</a></li>
+        </ul>
+      </nav>
 
-    <section class="intro">
-      <h2>Hello There! 👋</h2>
-      <p class="intro-text">
-        Welcome to my little corner of the internet! I'm a Computer Science student who believes that code can be both powerful and playful. I love learning new things, building silly projects that make me smile, and figuring out how stuff works under the hood.
-      </p>
-    </section>
-
-    <section class="fun-facts-section">
-      <h2>Random Tidbits 🎲</h2>
-      <div class="fun-facts">
-        <div class="fun-fact">
-          <div class="fun-fact-icon">☕</div>
-          <p>Fueled by an unhealthy amount of coffee and curiosity</p>
-        </div>
-        <div class="fun-fact">
-          <div class="fun-fact-icon">📚</div>
-          <p>Always reading 3 books at once (and finishing none)</p>
-        </div>
-        <div class="fun-fact">
-          <div class="fun-fact-icon">🎵</div>
-          <p>Coding with lo-fi beats in the background is mandatory</p>
-        </div>
-        <div class="fun-fact">
-          <div class="fun-fact-icon">🌱</div>
-          <p>Trying to grow plants (and slowly succeeding!)</p>
+      <div class="sidebar-social">
+        <div class="sidebar-social-title">Connect</div>
+        <div class="sidebar-social-list">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="sidebar-social-link" title="GitHub">🐙</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="sidebar-social-link" title="LinkedIn">💼</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="sidebar-social-link" title="YouTube">🎬</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="sidebar-social-link" title="Twitter">🐦</a>
+          <a href="mailto:you@example.com" class="sidebar-social-link" title="Email">📧</a>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <section class="hobbies">
-      <h2>Hobbies & Interests 🎨</h2>
-      <div class="hobbies-grid">
-        <div class="hobby-card">
-          <h3>Programming</h3>
-          <p>Exploring different programming languages and building projects that spark joy.</p>
-        </div>
-        <div class="hobby-card">
-          <h3>Web Development</h3>
-          <p>Creating interactive and responsive websites that are both functional and pretty.</p>
-        </div>
-        <div class="hobby-card">
-          <h3>Open Source</h3>
-          <p>Contributing to and learning from amazing open-source communities.</p>
-        </div>
-        <div class="hobby-card">
-          <h3>Learning</h3>
-          <p>Always chasing that "aha!" moment when something clicks.</p>
-        </div>
-      </div>
-    </section>
+    <main class="main-content">
+      <div class="container">
+        <header>
+          <h1>Hello, I'm Your Name! 👋</h1>
+          <p class="tagline">Computer Science Student | Curious Creator | Code & Coffee ☕</p>
+        </header>
 
-    <section class="goals-dreams-section">
-      <h2>Goals & Dreams 🌈</h2>
-      <div class="goals-dreams">
-        <div class="goals-card">
-          <h3>Short-term Goals</h3>
-          <ul>
-            <li>Learn one new programming language this year</li>
-            <li>Contribute to 3 open-source projects</li>
-            <li>Build something that helps someone</li>
-            <li>Drink more water (important!)</li>
-          </ul>
+        <div class="quote-section">
+          <p class="quote-text">"The best way to predict the future is to create it."</p>
+          <p class="quote-author">— Someone wise, probably</p>
         </div>
-        <div class="dreams-card">
-          <h3>Big Dreams</h3>
-          <ul>
-            <li>Work on projects that make a positive impact</li>
-            <li>Travel to places I've only read about</li>
-            <li>Keep learning and growing every day</li>
-            <li>Have a never-ending supply of good books</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <section class="projects">
-      <h2>Projects 🛠️</h2>
-      <div class="projects-grid">
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">🚀</div>
-            <div class="project-content">
-              <h3>Project One</h3>
-              <p>A brief description of your first project. Explain what it does and why you built it.</p>
+        <section id="intro" class="intro">
+          <h2>About Me ✨</h2>
+          <p class="intro-text">
+            Welcome to my little corner of the internet! I'm a Computer Science student who believes that code can be both powerful and playful. I love learning new things, building silly projects that make me smile, and figuring out how stuff works under the hood. Life's too short not to have fun while coding! 🚀
+          </p>
+        </section>
+
+        <section class="fun-facts-section">
+          <h2>Random Tidbits 🎲</h2>
+          <div class="fun-facts">
+            <div class="fun-fact">
+              <div class="fun-fact-icon">☕</div>
+              <p>Fueled by an unhealthy amount of coffee and curiosity</p>
+            </div>
+            <div class="fun-fact">
+              <div class="fun-fact-icon">📚</div>
+              <p>Always reading 3 books at once (and finishing none)</p>
+            </div>
+            <div class="fun-fact">
+              <div class="fun-fact-icon">🎵</div>
+              <p>Coding with lo-fi beats in the background is mandatory</p>
+            </div>
+            <div class="fun-fact">
+              <div class="fun-fact-icon">🌱</div>
+              <p>Trying to grow plants (and slowly succeeding!)</p>
             </div>
           </div>
-        </a>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">💻</div>
-            <div class="project-content">
-              <h3>Project Two</h3>
-              <p>A brief description of your second project. Explain what it does and why you built it.</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">📱</div>
-            <div class="project-content">
-              <h3>Project Three</h3>
-              <p>A brief description of your third project. Explain what it does and why you built it.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
+        </section>
 
-    <footer>
-      <p>Made with ❤️ and ☕ &copy; 2024 Your Name</p>
-    </footer>
+        <section id="hobbies" class="hobbies">
+          <h2>Hobbies & Interests 🎨</h2>
+          <div class="hobbies-grid">
+            <div class="hobby-card">
+              <h3>🎮 Gaming</h3>
+              <p>Getting lost in virtual worlds and appreciating games as an art form.</p>
+            </div>
+            <div class="hobby-card">
+              <h3>💻 Programming</h3>
+              <p>Exploring different languages and building projects that spark joy.</p>
+            </div>
+            <div class="hobby-card">
+              <h3>🌐 Web Dev</h3>
+              <p>Creating interactive and responsive websites that are both functional and pretty.</p>
+            </div>
+            <div class="hobby-card">
+              <h3>📖 Reading</h3>
+              <p>Always chasing that "aha!" moment when something clicks.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="personal" class="personal-stuff">
+          <h2>Personal Favorites 💖</h2>
+          
+          <div class="personal-section">
+            <h3>🎮 Games I've Played</h3>
+            <div class="personal-grid">
+              <div class="personal-item">
+                <div class="personal-item-title">Game One</div>
+                <div class="personal-item-desc">An epic adventure game</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Game Two</div>
+                <div class="personal-item-desc">A cozy indie gem</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Game Three</div>
+                <div class="personal-item-desc">Competitive fun</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Game Four</div>
+                <div class="personal-item-desc">Classic favorite</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="personal-section">
+            <h3>🎵 Songs I Like</h3>
+            <div class="personal-grid">
+              <div class="personal-item">
+                <div class="personal-item-title">Song One</div>
+                <div class="personal-item-desc">Artist Name</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Song Two</div>
+                <div class="personal-item-desc">Artist Name</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Song Three</div>
+                <div class="personal-item-desc">Artist Name</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Song Four</div>
+                <div class="personal-item-desc">Artist Name</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="personal-section">
+            <h3>📚 Books I Recommend</h3>
+            <div class="personal-grid">
+              <div class="personal-item">
+                <div class="personal-item-title">Book One</div>
+                <div class="personal-item-desc">Author Name</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Book Two</div>
+                <div class="personal-item-desc">Author Name</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Book Three</div>
+                <div class="personal-item-desc">Author Name</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Book Four</div>
+                <div class="personal-item-desc">Author Name</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="personal-section">
+            <h3>📖 What I'm Reading Now</h3>
+            <div class="personal-grid">
+              <div class="personal-item">
+                <div class="personal-item-title">Current Read</div>
+                <div class="personal-item-desc">A book I'm currently enjoying</div>
+              </div>
+              <div class="personal-item">
+                <div class="personal-item-title">Next Up</div>
+                <div class="personal-item-desc">On my reading list</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="goals" class="goals-dreams-section">
+          <h2>Goals & Dreams 🌈</h2>
+          <div class="goals-dreams">
+            <div class="goals-card">
+              <h3>Short-term Goals</h3>
+              <ul>
+                <li>Learn one new programming language this year</li>
+                <li>Contribute to 3 open-source projects</li>
+                <li>Build something that helps someone</li>
+                <li>Drink more water (important!)</li>
+              </ul>
+            </div>
+            <div class="dreams-card">
+              <h3>Big Dreams</h3>
+              <ul>
+                <li>Work on projects that make a positive impact</li>
+                <li>Travel to places I've only read about</li>
+                <li>Keep learning and growing every day</li>
+                <li>Have a never-ending supply of good books</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="projects">
+          <h2>Projects 🛠️</h2>
+          
+          <div class="project-category">
+            <div class="category-title">🖥️ Systems</div>
+            <div class="projects-grid">
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                  <div class="project-image">⚙️</div>
+                  <div class="project-content">
+                    <h3>System Project One</h3>
+                    <p>A systems-level project dealing with low-level stuff and optimizations.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                  <div class="project-image">🔧</div>
+                  <div class="project-content">
+                    <h3>System Project Two</h3>
+                    <p>Building something from scratch and learning how computers work.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-category">
+            <div class="category-title">🌐 Web</div>
+            <div class="projects-grid">
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                  <div class="project-image">🚀</div>
+                  <div class="project-content">
+                    <h3>Web Project One</h3>
+                    <p>A web app that does something cool and useful.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                  <div class="project-image">💻</div>
+                  <div class="project-content">
+                    <h3>Web Project Two</h3>
+                    <p>Interactive website with modern tech stack.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                  <div class="project-image">📱</div>
+                  <div class="project-content">
+                    <h3>Web Project Three</h3>
+                    <p>Responsive design for all devices.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-category">
+            <div class="category-title">🎮 Game Dev</div>
+            <div class="projects-grid">
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                  <div class="project-image">🎲</div>
+                  <div class="project-content">
+                    <h3>Game Project One</h3>
+                    <p>Small game built for fun and learning.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                  <div class="project-image">🎯</div>
+                  <div class="project-content">
+                    <h3>Game Project Two</h3>
+                    <p>Experimenting with game mechanics.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-grid">
+            <div class="footer-section">
+              <h4>Navigation</h4>
+              <ul class="footer-links">
+                <li><a href="#intro">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Social</h4>
+              <ul class="footer-links">
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Platforms</h4>
+              <ul class="footer-links">
+                <li><a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">Codeforces</a></li>
+                <li><a href="https://leetcode.com" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+                <li><a href="https://dev.to" target="_blank" rel="noopener noreferrer">Dev.to</a></li>
+                <li><a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">Stack Overflow</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>More</h4>
+              <ul class="footer-links">
+                <li><a href="https://medium.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                <li><a href="https://letterboxd.com" target="_blank" rel="noopener noreferrer">Letterboxd</a></li>
+                <li><a href="https://goodreads.com" target="_blank" rel="noopener noreferrer">Goodreads</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub">🐙</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">💼</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="YouTube">🎬</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Twitter">🐦</a>
+            <a href="mailto:you@example.com" class="footer-social-link" title="Email">📧</a>
+          </div>
+          <div class="footer-bottom">
+            <p>Made with ❤️ and ☕ &copy; 2024 Your Name</p>
+          </div>
+        </div>
+      </footer>
+    </main>
   </div>
 </body>
 </html>
