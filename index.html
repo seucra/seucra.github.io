@@ -2,13 +2,234 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecting...</title>
-  <script>
-    window.location.href = "/web-dev-practice";
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #110e08;
+      color: #f0e4d1;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #dfc387;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 0;
+      border-bottom: 1px solid #4e4739;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #dfc387;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: #b4aa98;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #dfc387;
+    }
+
+    .intro-text {
+      font-size: 1.1rem;
+      max-width: 800px;
+      color: #f0e4d1;
+    }
+
+    .hobbies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .hobby-card {
+      background-color: #1d1910;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      border: 1px solid #4e4739;
+      transition: transform 0.2s ease;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-3px);
+      border-color: #7d7464;
+    }
+
+    .hobby-card h3 {
+      color: #d7c5a0;
+      margin-bottom: 0.5rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background-color: #1d1910;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      border: 1px solid #4e4739;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      border-color: #dfc387;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 180px;
+      background-color: #241f15;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #b4aa98;
+      font-size: 3rem;
+    }
+
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-content h3 {
+      color: #d7c5a0;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-content p {
+      color: #b4aa98;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid #4e4739;
+      color: #7d7464;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .projects-grid,
+      .hobbies-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <p>If you are not redirected, <a href="/web-dev-practice">click here</a>.</p>
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <p class="tagline">Computer Science Student | Tech Enthusiast</p>
+    </header>
+
+    <section class="intro">
+      <h2>About Me</h2>
+      <p class="intro-text">
+        I'm a passionate Computer Science student with a love for technology and problem-solving. 
+        I enjoy working on projects that challenge me and help me learn new things. 
+        This portfolio showcases some of my work and interests.
+      </p>
+    </section>
+
+    <section class="hobbies">
+      <h2>Hobbies & Interests</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <h3>Programming</h3>
+          <p>Exploring different programming languages and building cool projects.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>Web Development</h3>
+          <p>Creating interactive and responsive websites with modern technologies.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>Open Source</h3>
+          <p>Contributing to and learning from open-source projects.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>Learning</h3>
+          <p>Always curious about new technologies and concepts in CS.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          <div class="project-card">
+            <div class="project-image">🚀</div>
+            <div class="project-content">
+              <h3>Project One</h3>
+              <p>A brief description of your first project. Explain what it does and why you built it.</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          <div class="project-card">
+            <div class="project-image">💻</div>
+            <div class="project-content">
+              <h3>Project Two</h3>
+              <p>A brief description of your second project. Explain what it does and why you built it.</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          <div class="project-card">
+            <div class="project-image">📱</div>
+            <div class="project-content">
+              <h3>Project Three</h3>
+              <p>A brief description of your third project. Explain what it does and why you built it.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
-
