@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seucra's Links</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --background: #0b0f0d;
+      --onBackground: #dde8e1;
+      --surface: #0b0f0d;
+      --surfaceContainer: #141b18;
+      --surfaceContainerHighest: #1e2823;
+      --onSurface: #dde8e1;
+      --surfaceVariant: #1e2823;
+      --onSurfaceVariant: #a3aea7;
+      --outline: #6e7872;
+      --outlineVariant: #404a45;
+      --primary: #a1d1ba;
+      --onPrimary: #1a4837;
+      --primaryContainer: #2e5b49;
+      --onPrimaryContainer: #bdeed7;
+      --secondary: #b3ccbf;
+      --onSecondary: #2e453b;
+      --secondaryContainer: #2a4036;
+      --tertiary: #e3fbff;
+      --onTertiary: #2c656e;
+      --error: #fa746f;
+      --onError: #490006;
+      --text: #dde8e1;
+      --subtext1: #a3aea7;
+      --subtext0: #6e7872;
+      --overlay2: #606964;
+      --overlay1: #515954;
+      --overlay0: #444b47;
+      --surface2: #363d39;
+      --surface1: #292e2b;
+      --surface0: #1a1f1c;
+      --base: #0b0f0d;
+      --mantle: #0b0f0d;
+      --crust: #0a0e0c;
+      --green: #9cf1c6;
+      --teal: #a5eed3;
+      --sky: #98ebd4;
+      --blue: #59cfc3;
+      --lavender: #84dcd5;
+      --yellow: #daf9db;
+      --peach: #aed9a6;
+      --mauve: #5bd0df;
+      --pink: #bae2ff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--teal));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: var(--subtext1);
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background-color: var(--surfaceContainer);
+      border: 1px solid var(--outlineVariant);
+      border-radius: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .link-button:hover {
+      background-color: var(--surfaceContainerHighest);
+      border-color: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+    }
+
+    .link-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .link-text {
+      flex: 1;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--outlineVariant);
+      color: var(--subtext0);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">👋</div>
+      <h1>Hey, I'm Seucra!</h1>
+      <p class="tagline">Here are all my important links</p>
+    </header>
+
+    <div class="links-container">
+      <a href="https://seucra.tech/portfolio" class="link-button">
+        <span class="link-icon">💼</span>
+        <span class="link-text">Portfolio</span>
+      </a>
+      
+      <a href="https://github.com/seucra" target="_blank" rel="noopener noreferrer" class="link-button">
+        <span class="link-icon">🐙</span>
+        <span class="link-text">GitHub</span>
+      </a>
+      
+      <a href="https://linkedin.com/in/seucra" target="_blank" rel="noopener noreferrer" class="link-button">
+        <span class="link-icon">💼</span>
+        <span class="link-text">LinkedIn</span>
+      </a>
+      
+      <a href="https://blog.seucra.tech" class="link-button">
+        <span class="link-icon">✍️</span>
+        <span class="link-text">Blog</span>
+      </a>
+      
+      <a href="https://findit-campus.seucra.tech" target="_blank" rel="noopener noreferrer" class="link-button">
+        <span class="link-icon">🏫</span>
+        <span class="link-text">FindIt-Campus</span>
+      </a>
+      
+      <a href="https://kittykat.seucra.tech" target="_blank" rel="noopener noreferrer" class="link-button">
+        <span class="link-icon">🐱</span>
+        <span class="link-text">Enterprise OMS SaaS</span>
+      </a>
+      
+      <a href="https://seucra.tech" class="link-button">
+        <span class="link-icon">🌐</span>
+        <span class="link-text">Main Website</span>
+      </a>
+    </div>
+
+    <footer>
+      <p>Made with ❤️ &nbsp; | &nbsp; <a href="https://seucra.tech">seucra.tech</a></p>
+    </footer>
+  </div>
+</body>
+</html>
