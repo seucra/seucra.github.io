@@ -531,6 +531,22 @@
       }
     }
   </style>
+    <!-- Telemetry hit-tracking -->
+    <script>
+      (function() {
+        try {
+          fetch('https://api.seucra.tech/analytics/view', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              pathname: window.location.pathname + window.location.hash,
+              referrer: document.referrer || '',
+              browser: navigator.userAgent || 'Unknown'
+            })
+          });
+        } catch(e) {}
+      })();
+    </script>
 </head>
 <body>
   <div class="layout">
