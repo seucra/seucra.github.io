@@ -4,6 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Portfolio</title>
+  <script>
+    // Set theme early to avoid flashing
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('seucra-theme') || 'emerald');
+    
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('seucra-theme', theme);
+      
+      // Update active button borders
+      document.querySelectorAll('.sidebar-theme button').forEach(btn => {
+        const btnTheme = btn.getAttribute('data-btn-theme');
+        if (btnTheme === theme) {
+          btn.style.outline = '2px solid var(--text)';
+          btn.style.outlineOffset = '2px';
+        } else {
+          btn.style.outline = 'none';
+        }
+      });
+    }
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      const currentTheme = localStorage.getItem('seucra-theme') || 'emerald';
+      setTheme(currentTheme);
+    });
+  </script>
   <style>
     * {
       margin: 0;
@@ -11,11 +36,17 @@
       box-sizing: border-box;
     }
 
-    :root {
+    /* Themes from schemes.md */
+    :root, [data-theme="emerald"] {
       --background: #0b0f0d;
       --onBackground: #dde8e1;
       --surface: #0b0f0d;
+      --surfaceDim: #0b0f0d;
+      --surfaceBright: #252e29;
+      --surfaceContainerLowest: #000000;
+      --surfaceContainerLow: #0f1512;
       --surfaceContainer: #141b18;
+      --surfaceContainerHigh: #19211d;
       --surfaceContainerHighest: #1e2823;
       --onSurface: #dde8e1;
       --surfaceVariant: #1e2823;
@@ -54,6 +85,256 @@
       --peach: #aed9a6;
       --mauve: #5bd0df;
       --pink: #bae2ff;
+    }
+
+    [data-theme="peach"] {
+      --background: #130d0b;
+      --onBackground: #f9e0dc;
+      --surface: #130d0b;
+      --surfaceDim: #130d0b;
+      --surfaceBright: #372926;
+      --surfaceContainerLowest: #000000;
+      --surfaceContainerLow: #1a1110;
+      --surfaceContainer: #221715;
+      --surfaceContainerHigh: #291d1b;
+      --surfaceContainerHighest: #302220;
+      --onSurface: #f9e0dc;
+      --surfaceVariant: #302220;
+      --onSurfaceVariant: #bca6a3;
+      --outline: #84716e;
+      --outlineVariant: #554441;
+      --primary: #f9b6ac;
+      --onPrimary: #61332d;
+      --primaryContainer: #76453e;
+      --onPrimaryContainer: #ffdbd6;
+      --secondary: #e7bdb6;
+      --onSecondary: #563934;
+      --secondaryContainer: #513430;
+      --tertiary: #ffe1bb;
+      --onTertiary: #6d4d1c;
+      --error: #f97386;
+      --onError: #490013;
+      --text: #f9e0dc;
+      --subtext1: #bca6a3;
+      --subtext0: #84716e;
+      --overlay2: #746360;
+      --overlay1: #635451;
+      --overlay0: #534643;
+      --surface2: #443936;
+      --surface1: #342b28;
+      --surface0: #241c1a;
+      --base: #130d0b;
+      --mantle: #130d0b;
+      --crust: #120c0a;
+      --green: #ffd8c2;
+      --teal: #ffdb94;
+      --sky: #ebd1ff;
+      --blue: #ffa2bd;
+      --lavender: #ffbac7;
+      --yellow: #ffeee8;
+      --peach: #ffbeaf;
+      --mauve: #ffa9b2;
+      --pink: #ffd2d2;
+    }
+
+    [data-theme="cyan"] {
+      --background: #0a0f0f;
+      --onBackground: #dce8e6;
+      --surface: #0a0f0f;
+      --surfaceDim: #0a0f0f;
+      --surfaceBright: #242e2d;
+      --surfaceContainerLowest: #000000;
+      --surfaceContainerLow: #0e1514;
+      --surfaceContainer: #131b1a;
+      --surfaceContainerHigh: #192120;
+      --surfaceContainerHighest: #1d2827;
+      --onSurface: #dce8e6;
+      --surfaceVariant: #1d2827;
+      --onSurfaceVariant: #a2adac;
+      --outline: #6d7876;
+      --outlineVariant: #3f4a49;
+      --primary: #9bd0cc;
+      --onPrimary: #0d4845;
+      --primaryContainer: #255b57;
+      --onPrimaryContainer: #b8ede9;
+      --secondary: #b0ccc9;
+      --onSecondary: #2c4543;
+      --secondaryContainer: #27403e;
+      --tertiary: #d5efff;
+      --onTertiary: #2e5c72;
+      --error: #fa746f;
+      --onError: #490006;
+      --text: #dce8e6;
+      --subtext1: #a2adac;
+      --subtext0: #6d7876;
+      --overlay2: #5f6967;
+      --overlay1: #505958;
+      --overlay0: #434b4a;
+      --surface2: #353d3c;
+      --surface1: #282e2e;
+      --surface0: #191f1e;
+      --base: #0a0f0f;
+      --mantle: #0a0f0f;
+      --crust: #090e0e;
+      --green: #8ef2de;
+      --teal: #9feee6;
+      --sky: #93eae8;
+      --blue: #57cdd8;
+      --lavender: #85dae6;
+      --yellow: #d3fae8;
+      --peach: #a9daac;
+      --mauve: #5fcfe6;
+      --pink: #bae2ff;
+    }
+
+    [data-theme="blue"] {
+      --background: #0a0f0f;
+      --onBackground: #dce8e7;
+      --surface: #0a0f0f;
+      --surfaceDim: #0a0f0f;
+      --surfaceBright: #242e2e;
+      --surfaceContainerLowest: #000000;
+      --surfaceContainerLow: #0e1515;
+      --surfaceContainer: #131b1b;
+      --surfaceContainerHigh: #192121;
+      --surfaceContainerHighest: #1d2828;
+      --onSurface: #dce8e7;
+      --surfaceVariant: #1d2828;
+      --onSurfaceVariant: #a2adad;
+      --outline: #6d7877;
+      --outlineVariant: #3f4a4a;
+      --primary: #9bd0d1;
+      --onPrimary: #0b4748;
+      --primaryContainer: #255a5b;
+      --onPrimaryContainer: #b8edee;
+      --secondary: #b0cccc;
+      --onSecondary: #2b4445;
+      --secondaryContainer: #274040;
+      --tertiary: #d3ebff;
+      --onTertiary: #305973;
+      --error: #fa746f;
+      --onError: #490006;
+      --text: #dce8e7;
+      --subtext1: #a2adad;
+      --subtext0: #6d7877;
+      --overlay2: #5f6968;
+      --overlay1: #505959;
+      --overlay0: #434b4a;
+      --surface2: #353d3c;
+      --surface1: #282e2e;
+      --surface0: #191f1e;
+      --base: #0a0f0f;
+      --mantle: #0a0f0f;
+      --crust: #090e0e;
+      --green: #8bf1e6;
+      --teal: #9eedec;
+      --sky: #93e9ee;
+      --blue: #59ccdf;
+      --lavender: #87d9ec;
+      --yellow: #d2faec;
+      --peach: #a9daac;
+      --mauve: #63ceed;
+      --pink: #bae2ff;
+    }
+
+    [data-theme="charcoal"] {
+      --background: #0a0f0e;
+      --onBackground: #dde8e4;
+      --surface: #0a0f0e;
+      --surfaceDim: #0a0f0e;
+      --surfaceBright: #242e2c;
+      --surfaceContainerLowest: #000000;
+      --surfaceContainerLow: #0e1513;
+      --surfaceContainer: #131b19;
+      --surfaceContainerHigh: #19211f;
+      --surfaceContainerHighest: #1e2826;
+      --onSurface: #dde8e4;
+      --surfaceVariant: #1e2826;
+      --onSurfaceVariant: #a2adaa;
+      --outline: #6d7875;
+      --outlineVariant: #3f4a48;
+      --primary: #9cd1c6;
+      --onPrimary: #114841;
+      --primaryContainer: #275b53;
+      --onPrimaryContainer: #b9eee3;
+      --secondary: #b1ccc6;
+      --onSecondary: #2c4540;
+      --secondaryContainer: #27403b;
+      --tertiary: #c8eeff;
+      --onTertiary: #285b6d;
+      --error: #fa746f;
+      --onError: #490006;
+      --text: #dde8e4;
+      --subtext1: #a2adaa;
+      --subtext0: #6d7875;
+      --overlay2: #5f6966;
+      --overlay1: #505957;
+      --overlay0: #434b49;
+      --surface2: #353d3b;
+      --surface1: #282e2d;
+      --surface0: #191f1d;
+      --base: #0a0f0e;
+      --mantle: #0a0f0e;
+      --crust: #090e0d;
+      --green: #92f2d6;
+      --teal: #a0eee0;
+      --sky: #94eae1;
+      --blue: #56ced1;
+      --lavender: #84dae1;
+      --yellow: #d5fae4;
+      --peach: #a9daac;
+      --mauve: #5bd0e0;
+      --pink: #bae2ff;
+    }
+
+    [data-theme="terracotta"] {
+      --background: #130d0b;
+      --onBackground: #f9e0db;
+      --surface: #130d0b;
+      --surfaceDim: #130d0b;
+      --surfaceBright: #372926;
+      --surfaceContainerLowest: #000000;
+      --surfaceContainerLow: #1a110f;
+      --surfaceContainer: #221715;
+      --surfaceContainerHigh: #291d1a;
+      --surfaceContainerHighest: #30221f;
+      --onSurface: #f9e0db;
+      --surfaceVariant: #30221f;
+      --onSurfaceVariant: #bca6a2;
+      --outline: #84716d;
+      --outlineVariant: #554441;
+      --primary: #f9b7a8;
+      --onPrimary: #61342a;
+      --primaryContainer: #76453b;
+      --onPrimaryContainer: #ffdbd4;
+      --secondary: #e7bdb4;
+      --onSecondary: #563933;
+      --secondaryContainer: #51342e;
+      --tertiary: #ffe4bf;
+      --onTertiary: #6d501d;
+      --error: #f97386;
+      --onError: #490013;
+      --text: #f9e0db;
+      --subtext1: #bca6a2;
+      --subtext0: #84716d;
+      --overlay2: #74636d;
+      --overlay1: #635450;
+      --overlay0: #534643;
+      --surface2: #443836;
+      --surface1: #342b28;
+      --surface0: #241c1a;
+      --base: #130d0b;
+      --mantle: #130d0b;
+      --crust: #120c0a;
+      --green: #ffd8c0;
+      --teal: #ffdb94;
+      --sky: #ebd1ff;
+      --blue: #ffa2bd;
+      --lavender: #ffbbc5;
+      --yellow: #ffeee7;
+      --peach: #ffbfac;
+      --mauve: #ffa9ae;
+      --pink: #ffd2d0;
     }
 
     body {
@@ -576,7 +857,25 @@
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="sidebar-social-link" title="LinkedIn">💼</a>
           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="sidebar-social-link" title="YouTube">🎬</a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="sidebar-social-link" title="Twitter">🐦</a>
-          <a href="mailto:you@example.com" class="sidebar-social-link" title="Email">�    <main class="main-content">
+          <a href="mailto:you@example.com" class="sidebar-social-link" title="Email">📧</a>
+        </div>
+      </div>
+
+      <!-- Theme Selection -->
+      <div class="sidebar-theme" style="margin-top: 2rem; border-top: 1px solid var(--outlineVariant); padding-top: 1.5rem;">
+        <div class="sidebar-social-title" style="margin-bottom: 0.75rem;">Theme</div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;">
+          <button onclick="setTheme('emerald')" data-btn-theme="emerald" style="background-color: #a1d1ba; border: none; border-radius: 4px; height: 28px; cursor: pointer;" title="Emerald"></button>
+          <button onclick="setTheme('peach')" data-btn-theme="peach" style="background-color: #f9b6ac; border: none; border-radius: 4px; height: 28px; cursor: pointer;" title="Peach"></button>
+          <button onclick="setTheme('cyan')" data-btn-theme="cyan" style="background-color: #9bd0cc; border: none; border-radius: 4px; height: 28px; cursor: pointer;" title="Cyan"></button>
+          <button onclick="setTheme('blue')" data-btn-theme="blue" style="background-color: #9bd0d1; border: none; border-radius: 4px; height: 28px; cursor: pointer;" title="Ice Blue"></button>
+          <button onclick="setTheme('charcoal')" data-btn-theme="charcoal" style="background-color: #9cd1c6; border: none; border-radius: 4px; height: 28px; cursor: pointer;" title="Charcoal"></button>
+          <button onclick="setTheme('terracotta')" data-btn-theme="terracotta" style="background-color: #f9b7a8; border: none; border-radius: 4px; height: 28px; cursor: pointer;" title="Terracotta"></button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
       <div class="container">
         <header>
           <h1>Hello, I'm Tabrez! 👋</h1>
