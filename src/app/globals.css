@@ -163,3 +163,23 @@ p {
     color: var(--accent-soft);
 
 }
+
+.today-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: var(--space-6);
+
+}
+
+.today-grid article {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-3);
+
+}
