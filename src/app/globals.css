@@ -122,11 +122,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-p {
-  color: var(--text-secondary);
-  max-width: 70ch;
-}
-
 .badge {
   display: inline-flex;
   align-items: center;
@@ -138,6 +133,16 @@ p {
   border-radius: 999px;
 
   font-size: 0.875rem;
+}
+
+.hero h1 {
+  max-width: 10ch;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 70ch;
 }
 
 .hero-actions {
@@ -286,5 +291,29 @@ p {
     color: var(--text-secondary);
 
     font-size: .9rem;
+
+}
+
+.hero {
+
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.eyebrow {
+
+    color: var(--text-secondary);
+
+    text-transform: uppercase;
+
+    letter-spacing: .14em;
+
+    font-size: .82rem;
+
+    font-weight: 600;
 
 }

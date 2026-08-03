@@ -1,45 +1,51 @@
+import Heading from "@/components/ui/Heading";
 import Link from "@/components/ui/Link";
 import Section from "@/components/ui/Section";
 import Stack from "@/components/ui/Stack";
-import Heading from "@/components/ui/Heading";
 import Text from "@/components/ui/Text";
 
 export default function Hero() {
   return (
     <Section>
 
-      <Stack>
+      <div className="hero">
 
-        <Text>
-          Computer Engineering Student
-        </Text>
+        <Stack>
 
-        <Heading level={1}>
-          Shams Tabrez Ahmed
-        </Heading>
+          <span className="eyebrow">
+            Computer Engineering Student
+          </span>
 
-        <Text>
-          Building backend systems with Rust, Linux and the Matrix ecosystem.
-          Documenting projects, engineering decisions and continuous learning.
-        </Text>
+          <Heading level={1}>
+            Shams
+            <br />
+            Tabrez Ahmed
+          </Heading>
 
-        <div className="hero-actions">
+          <Text>
+            Building backend systems with Rust, Linux and the Matrix ecosystem.
+            Documenting projects, engineering decisions and continuous learning.
+          </Text>
 
-          <Link href="/projects">
-            Projects
-          </Link>
+          <div className="hero-actions">
 
-          <Link href="/journey">
-            Journey
-          </Link>
+            <Link href="/projects">
+              Projects
+            </Link>
 
-          <Link href="https://github.com/seucra">
-            GitHub
-          </Link>
+            <Link href="/journey">
+              Journey
+            </Link>
 
-        </div>
+            <Link href="https://github.com/seucra">
+              GitHub
+            </Link>
 
-      </Stack>
+          </div>
+
+        </Stack>
+
+      </div>
 
     </Section>
   );
