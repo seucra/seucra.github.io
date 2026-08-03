@@ -1,14 +1,27 @@
+import Heading from "@/components/ui/Heading";
+import Link from "@/components/ui/Link";
+import Section from "@/components/ui/Section";
+import Stack from "@/components/ui/Stack";
+
 export default function LatestJournal() {
   return (
-    <section>
-      <h2>Latest Journal</h2>
+    <Section>
+      <Stack>
 
-      <p>
-        Journal entries will appear here as projects evolve and new lessons are
-        documented.
-      </p>
+        <Heading>
+          Engineering Journal
+        </Heading>
 
-      <a href="/journal">View Journal →</a>
-    </section>
+        <p>
+          Notes, experiments, architectural decisions, lessons learned and
+          progress logs from ongoing projects.
+        </p>
+
+        <Link href="/journal">
+          Open Journal →
+        </Link>
+
+      </Stack>
+    </Section>
   );
 }
