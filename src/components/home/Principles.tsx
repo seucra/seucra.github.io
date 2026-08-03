@@ -1,42 +1,57 @@
+import Heading from "@/components/ui/Heading";
+import Section from "@/components/ui/Section";
+import Stack from "@/components/ui/Stack";
+
 const principles = [
-  {
-    title: "Evidence over adjectives",
-    description:
-      "Projects should demonstrate capability better than claims."
-  },
-  {
-    title: "Trajectory over perfection",
-    description:
-      "Growth matters more than pretending to know everything."
-  },
-  {
-    title: "Understanding over authorship",
-    description:
-      "Using AI is acceptable when understanding is retained."
-  },
-  {
-    title: "Preserve history",
-    description:
-      "Old projects and failed ideas explain engineering decisions."
-  },
-  {
-    title: "Document decisions",
-    description:
-      "Engineering is more than code. Decisions deserve documentation."
-  }
+
+    "Evidence over adjectives",
+
+    "Trajectory over perfection",
+
+    "Understanding over authorship",
+
+    "Preserve history",
+
+    "Document decisions"
+
 ];
 
 export default function Principles() {
-  return (
-    <section>
-      <h2>Engineering Principles</h2>
 
-      {principles.map((principle) => (
-        <article key={principle.title}>
-          <h3>{principle.title}</h3>
-          <p>{principle.description}</p>
-        </article>
-      ))}
-    </section>
-  );
+    return (
+
+        <Section>
+
+            <Stack>
+
+                <Heading>
+
+                    Engineering Principles
+
+                </Heading>
+
+                <div className="principles-grid">
+
+                    {principles.map((principle) => (
+
+                        <article key={principle}>
+
+                            <h3>
+
+                                {principle}
+
+                            </h3>
+
+                        </article>
+
+                    ))}
+
+                </div>
+
+            </Stack>
+
+        </Section>
+
+    );
+
 }
