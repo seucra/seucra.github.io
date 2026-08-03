@@ -1,6 +1,6 @@
-import vigilant from "@/content/projects/vigilant";
+import vigilant from "@/content/projects/vigilant/meta";
 
-import { Project } from "@/types/Project";
+import { Project } from "@/types/project";
 
 export const projects: Project[] = [
 
@@ -8,7 +8,23 @@ export const projects: Project[] = [
 
 ];
 
-export function getProjectBySlug(slug: string) {
+export function getProjects() {
+
+    return projects;
+
+}
+
+export function getFeaturedProject() {
+
+    return projects.find(
+
+        (project) => project.featured
+
+    );
+
+}
+
+export function getProject(slug: string) {
 
     return projects.find(
 

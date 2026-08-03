@@ -1,6 +1,6 @@
 import Hero from "@/components/home/Hero";
 import Today from "@/components/home/Today";
-import FeaturedProject from "@/components/home/FeaturedProject";
+import FeaturedProject from "@/components/project/FeaturedProject";
 import Principles from "@/components/home/Principles";
 import LatestJournal from "@/components/home/LatestJournal";
 
