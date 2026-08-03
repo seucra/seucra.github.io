@@ -269,6 +269,16 @@ h3 {
 
 }
 
+.featured-project:hover {
+
+    border-color: var(--accent);
+
+    transform: translateY(-4px);
+
+    transition: all var(--transition);
+
+}
+
 .project-category {
 
     color: var(--accent);
