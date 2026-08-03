@@ -147,26 +147,25 @@ h3 {
 
 .hero-actions {
     display: flex;
-
     gap: var(--space-4);
-
     flex-wrap: wrap;
-
     margin-top: var(--space-4);
 }
 
 .hero-actions a {
-
-    color: var(--accent);
-
-    transition: color var(--transition);
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem 1.3rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    transition: all var(--transition);
 }
 
 .hero-actions a:hover {
-
-    color: var(--accent-soft);
-
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
 }
 
 .today-grid {
