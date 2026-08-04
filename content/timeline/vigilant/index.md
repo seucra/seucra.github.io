@@ -1,7 +1,7 @@
 ---
 title: Began Vigilant
 
-date: 2026-07
+date: 2026-07-01
 
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 
-date: 2026-08
+date: 2026-08-01
 
 draft: false
 ---

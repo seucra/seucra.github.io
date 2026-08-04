@@ -1,7 +1,7 @@
 ---
 title: Started Learning Rust
 
-date: 2025-01
+date: 2025-01-01
 
 draft: false
 ---

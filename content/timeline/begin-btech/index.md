@@ -1,7 +1,7 @@
 ---
 title: Began B.Tech
 
-date: 2023-08
+date: 2023-08-01
 
 draft: false
 ---
