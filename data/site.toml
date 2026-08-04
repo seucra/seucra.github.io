@@ -1,0 +1,17 @@
+owner = "Shams Tabrez Ahmed"
+
+flagship = "vigilant"
+
+homepageProjects = [
+    "vigilant",
+]
+
+homepageResearch = [
+    "vulnerability-prioritization",
+]
+
+homepageSkills = [
+    "rust",
+    "backend",
+    "cybersecurity",
+]

@@ -1,133 +1,93 @@
 # Frontmatter Contract
 
-This document defines every frontmatter key used across the repository.
+## Projects
 
-Rules
-
-- Never invent a new key.
-- Never rename an existing key.
-- Missing keys are preferred over empty values.
-- Unknown metadata belongs in the body, not frontmatter.
-
----
-
-## Universal Keys
-
-Required
-
-title:
-summary:
-
-Recommended
-
-status:
-visibility:
-featured:
-priority:
-
-Dates
-
-started:
-completed:
-updated:
-
-Links
-
-github:
-website:
-demo:
-paper:
-video:
-
-Ownership
-
-ownership:
-collaboration:
-ai:
-understanding:
-
-Classification
-
-tags:
-topics:
-tech:
-domains:
-
-Relations
-
-related:
-
-Media
-
-hero:
-gallery:
-
-SEO
-
-aliases:
-draft:
-weight:
-
----
-
-## Enumerations
+title
+description
+date
+lastmod
+started
+completed
 
 status
-
-- planned
-- active
-- paused
-- completed
-- archived
-- superseded
-
 visibility
-
-- public
-- private
-- internal
-
+featured
 priority
 
-- flagship
-- major
-- normal
-- minor
-- historical
-
 ownership
-
-- personal
-- college
-- freelance
-- open-source
-
 collaboration
 
-- solo
-- team
+github
+website
+demo
+paper
 
-ai
+topics
+tech
+domains
+tags
 
-- none
-- assisted
-- heavy
-- generated
-
-understanding
-
-0-20
-
-Meaning
-
-0 = cannot explain
-
-10 = understands architecture
-
-20 = could rebuild manually
+draft
 
 ---
 
-This contract is frozen.
+## Research
 
-Breaking changes require updating this document first.
+title
+description
+date
+lastmod
+
+status
+paper
+repository
+
+topics
+datasets
+methods
+tags
+
+draft
+
+---
+
+## Infrastructure
+
+title
+description
+date
+
+service
+used_by
+
+tags
+
+draft
+
+---
+
+## Skills
+
+title
+
+level
+
+years
+
+evidence
+
+related_projects
+
+draft
+
+---
+
+## Timeline
+
+title
+
+date
+
+related
+
+draft
