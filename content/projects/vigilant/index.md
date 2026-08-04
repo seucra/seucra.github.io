@@ -1,132 +1,189 @@
 ---
-title: "Vigilant"
-description: "A secure messaging platform built on the Matrix ecosystem."
-date: 2026-07-20
+title: Vigilant
+description: Secure communication platform built on the Matrix ecosystem.
 
-draft: false
+date: 2026-07-20
+lastmod: 2026-08-04
+
+status: active
+visibility: public
+featured: true
+priority: flagship
+
+ownership: personal
+collaboration: frontend/backend collaboration
+
+github:
+website:
+demo:
+paper:
 
 tags:
-  - flagship
   - rust
   - matrix
   - cybersecurity
   - webassembly
+  - backend
+  - distributed-systems
 
-categories:
-  - Product
-
-summary: >
-  Vigilant is a secure messaging platform that explores modern communication
-  infrastructure through Matrix, Rust, and WebAssembly.
-
-heroStyle: basic
+draft: false
 ---
+
+# Overview
 
 Vigilant is my flagship engineering project.
 
-It began as an attempt to build a secure messaging application from scratch.
-As my understanding of distributed systems and secure messaging improved, the
-project evolved toward using the Matrix ecosystem instead of reinventing
-complex communication infrastructure. The current implementation focuses on
-building reliable client-side capabilities while leveraging established Matrix
-protocols and services rather than attempting to replace them. :contentReference[oaicite:0]{index=0}
+It explores how a modern secure communication platform can be built by combining Rust, WebAssembly and the Matrix ecosystem instead of attempting to reinvent mature messaging infrastructure.
 
-## Overview
+The project serves as the primary platform through which I study backend engineering, distributed systems, secure communication, infrastructure and modern software architecture.
 
-The project explores how a modern messaging platform can be built using
-existing open protocols together with Rust-based backend components.
+---
 
-Current work primarily focuses on:
+# Motivation
 
-- authentication
-- session management
-- rooms
-- messaging
-- timelines
-- direct messaging
-- notifications
-- Matrix integration
+The original idea began as an attempt to build a secure messaging application from the ground up.
 
-Rather than implementing custom cryptographic protocols, Vigilant builds on
-the Matrix ecosystem and its existing capabilities. :contentReference[oaicite:1]{index=1}
+As the project matured, I realized that rebuilding established protocols and cryptographic infrastructure would provide little engineering value compared to understanding and integrating existing open standards.
 
-## Architecture
+That realization shifted the project toward Matrix, allowing development effort to focus on client architecture, backend engineering and infrastructure rather than protocol reinvention.
 
-```
+---
+
+# Objectives
+
+- Learn backend engineering through a long-term product.
+- Build practical experience with Rust.
+- Explore distributed communication systems.
+- Understand Matrix architecture.
+- Design maintainable software rather than one-off prototypes.
+- Create a realistic foundation for future expansion.
+
+---
+
+# Architecture
+
+Current architecture consists of:
+
+```text
 Frontend
-    │
-    ▼
+        │
+        ▼
 Rust → WebAssembly Bridge
-    │
-    ▼
+        │
+        ▼
 matrix-sdk
 matrix-sdk-ui
-    │
-    ▼
+        │
+        ▼
 Matrix Synapse
+        │
+        ▼
+PostgreSQL
 ```
 
-The frontend communicates with a Rust bridge compiled to WebAssembly, which
-provides a JavaScript-friendly interface over the Matrix SDK. The bridge
-handles authentication, messaging, rooms, timelines, and session management,
-while Matrix Synapse provides the homeserver infrastructure. :contentReference[oaicite:2]{index=2}
+Supporting infrastructure includes Docker, MinIO and Nginx for deployment and storage.
 
-## Current Status
+---
 
-Backend Cycle 1 is complete.
+# Backend
+
+Backend development is the primary focus of the project.
 
 Implemented functionality includes:
 
 - User registration
-- Login and logout
-- Session handling
+- Authentication
+- Session persistence
 - Room management
-- Messaging
-- Chat history
 - Direct messaging
-- Timeline pagination
+- Timeline loading
+- Chat history
 - Notification events
+- Matrix integration
 
-The Rust bridge has also been compiled to WebAssembly and packaged for frontend
-consumption as an npm package. :contentReference[oaicite:3]{index=3}
+The backend is written in Rust and exposes a WebAssembly interface suitable for frontend applications.
 
-## Technologies
+---
+
+# Matrix SDK Bridge
+
+One major outcome of Vigilant is the extraction of a reusable Rust → WebAssembly bridge around Matrix SDK.
+
+Originally developed specifically for Vigilant, the bridge is now intended to become an independent library that can be reused by other Matrix-based applications.
+
+Long-term plans include API documentation, examples, releases and a stable public interface.
+
+---
+
+# Infrastructure
+
+The project currently relies on a self-hosted Matrix stack consisting of:
+
+- Matrix Synapse
+- PostgreSQL
+- MinIO
+- Nginx
+- Docker
+
+Using established infrastructure allows development effort to focus on engineering problems specific to the application rather than rebuilding existing systems.
+
+---
+
+# Technologies
 
 - Rust
 - WebAssembly
 - Matrix SDK
 - matrix-sdk-ui
-- Synapse
+- Matrix Synapse
 - Docker
 - PostgreSQL
 - MinIO
 - Nginx
+- Git
+- Linux
 
-:contentReference[oaicite:4]{index=4}
+---
 
-## Project Goals
+# What I Learned
 
-The long-term objective is not simply to create another messaging application,
-but to better understand distributed systems, modern backend architecture,
-protocol-driven software, and secure communication infrastructure.
+Working on Vigilant has significantly changed how I approach software engineering.
 
-Vigilant serves as the primary engineering project through which I continue to
-learn backend development, Rust, Linux, networking, and systems programming.
-:contentReference[oaicite:5]{index=5}
+Major lessons include:
 
-## Current Scope
+- Build on existing standards when appropriate.
+- Long-term architecture matters more than early features.
+- Documentation should evolve alongside implementation.
+- Backend systems require deliberate design rather than incremental patches.
+- Reading upstream source code is often necessary when documentation is insufficient.
 
-Current development is focused on the backend while frontend work continues in
-parallel with another collaborator. The project is active and continues to
-evolve incrementally. :contentReference[oaicite:6]{index=6}
+---
 
-## Related Projects
+# Current Status
 
-- matrix-sdk-bridge
-- Matrix Synapse infrastructure
-- seucra.tech
+Backend Cycle 1 has been completed.
 
-## Repository
+The Rust bridge successfully compiles to WebAssembly and has been published as an npm package.
 
-Development is ongoing and additional documentation, releases, and repository
-restructuring are planned as the project matures. :contentReference[oaicite:7]{index=7}
+Current work focuses on frontend integration, continued backend improvements and documentation.
+
+---
+
+# Future Work
+
+- Continue frontend integration.
+- Expand project documentation.
+- Improve deployment workflow.
+- Extract reusable components.
+- Publish stable releases.
+- Complete repository split for the Matrix SDK bridge.
+
+---
+
+# Related
+
+- Research → Vulnerability Prioritization
+- Infrastructure → Matrix Synapse
+- Skill → Rust
+- Skill → Backend Engineering
+- Skill → Cybersecurity
