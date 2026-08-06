@@ -12,6 +12,7 @@ Computer Engineering student in Mumbai documenting a deliberate path through **b
 I learn through projects that make the trade-offs visible. My current work includes **Vigilant**—a Matrix-based secure communication project—and a vulnerability-prioritization coursework project with possible research continuation.
 
 <div class="home-actions">
+  <a class="home-action" href="/connect/">Connect</a>
   <a class="home-action primary" href="/projects/">Explore projects</a>
   <a class="home-action" href="https://journal.seucra.tech">Read the journal</a>
 </div>
@@ -97,9 +98,10 @@ Public contributions, experiments and reusable engineering work.
 
 ---
 
-## Contact
+## Connect
 
+- **Email:** <mailto:contact@seucra.tech>
 - **GitHub:** [@seucra](https://github.com/seucra)
 - **LinkedIn:** [Shams Tabrez Ahmed](https://linkedin.com/in/s-t-ahmed)
-- **Email:** <mailto:tabrezahmed.sta33@gmail.com>
+- **X:** [@SeucraA](https://x.com/SeucraA)
 - **Journal:** [journal.seucra.tech](https://journal.seucra.tech)

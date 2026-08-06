@@ -62,9 +62,10 @@ keywords = ["Shams Tabrez Ahmed", "Seucra", "Rust", "backend engineering", "Matr
   links = [
     { github = "https://github.com/seucra" },
     { linkedin = "https://www.linkedin.com/in/s-t-ahmed/" },
+    { x-twitter = "https://x.com/SeucraA" },
     { dev = "https://dev.to/seucra" },
     { link = "https://journal.seucra.tech" },
-    { email = "mailto:tabrezahmed.sta33@gmail.com" }
+    { email = "mailto:contact@seucra.tech" }
   ]
 
 [header]
