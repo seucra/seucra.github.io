@@ -2,8 +2,8 @@
 title: Vigilant
 description: Secure communication platform built on the Matrix ecosystem.
 
-date: 2026-07-20
-lastmod: 2026-08-04
+date: 2026-08-06
+lastmod: 2026-08-06
 
 status: active
 visibility: public
@@ -61,6 +61,8 @@ That realization shifted the project toward Matrix, allowing development effort 
 ---
 
 # Architecture
+
+![Vigilant system topology showing client frontend, Rust WASM bridge, and self-hosted Matrix Synapse.](/images/vigilant-architecture.svg)
 
 Current architecture consists of:
 

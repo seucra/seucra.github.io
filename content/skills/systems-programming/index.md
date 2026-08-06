@@ -1,6 +1,7 @@
 ---
 title: Systems Programming
-
+date: 2026-08-06
+lastmod: 2026-08-06
 level: Developing
 
 years: 1

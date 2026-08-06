@@ -1,19 +1,20 @@
 ---
-title: Shams Tabrez Ahmed
+title: Shams Tabrez Ahmed (Seucra)
 
-description: Backend Engineer • Rust • Cybersecurity
+description: Computer Engineering student documenting backend systems, Rust, Linux, infrastructure and cybersecurity learning.
 
 cascade:
   showReadingTime: false
 ---
 
-# Shams Tabrez Ahmed
+Computer Engineering student in Mumbai documenting a deliberate path through **backend systems**, **Rust**, **Linux**, infrastructure, and cybersecurity.
 
-Computer Science student focused on **Backend Engineering**, **Rust**, **Systems Programming** and **Cybersecurity**.
+I learn through projects that make the trade-offs visible. My current work includes **Vigilant**—a Matrix-based secure communication project—and a vulnerability-prioritization coursework project with possible research continuation.
 
-I enjoy designing reliable backend systems, understanding distributed software and building long-term engineering projects rather than isolated prototypes.
-
-My current work revolves around **Vigilant**, a secure communication platform built on the Matrix ecosystem, together with research into practical vulnerability prioritization using public threat intelligence.
+<div class="home-actions">
+  <a class="home-action primary" href="/projects/">Explore projects</a>
+  <a class="home-action" href="https://journal.seucra.tech">Read the journal</a>
+</div>
 
 ---
 
@@ -49,7 +50,7 @@ A reusable Rust → WebAssembly bridge exposing Matrix SDK functionality for fro
 
 ### Vulnerability Prioritization
 
-Applied cybersecurity research focused on prioritizing software vulnerabilities using NVD, EPSS and CISA KEV.
+An active coursework project exploring how public vulnerability data such as NVD, EPSS and CISA KEV can support practical prioritization.
 
 → [/research/vulnerability-prioritization/](/research/vulnerability-prioritization/)
 
@@ -100,4 +101,5 @@ Public contributions, experiments and reusable engineering work.
 
 - **GitHub:** [@seucra](https://github.com/seucra)
 - **LinkedIn:** [Shams Tabrez Ahmed](https://linkedin.com/in/s-t-ahmed)
-- **Email:** <mailto:admin@seucra.tech>
+- **Email:** <mailto:tabrezahmed.sta33@gmail.com>
+- **Journal:** [journal.seucra.tech](https://journal.seucra.tech)

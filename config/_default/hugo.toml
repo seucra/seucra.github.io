@@ -1,4 +1,6 @@
 theme = "blowfish"
+baseURL = "https://seucra.tech/"
+title = "Shams Tabrez Ahmed (Seucra)"
 # -- Site Configuration --
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/getting-started/

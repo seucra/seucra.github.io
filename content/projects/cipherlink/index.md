@@ -2,8 +2,8 @@
 title: CipherLink
 description: The original secure messaging concept that ultimately evolved into Vigilant.
 
-date: 2026-05-01
-lastmod: 2026-08-04
+date: 2026-08-06
+lastmod: 2026-08-06
 
 status: archived
 visibility: public

@@ -2,8 +2,8 @@
 title: Matrix Synapse
 description: Self-hosted Matrix homeserver powering the communication infrastructure behind Vigilant.
 
-date: 2026-07-18
-lastmod: 2026-08-04
+date: 2026-08-06
+lastmod: 2026-08-06
 
 service: Matrix Synapse
 
@@ -56,6 +56,8 @@ The application layer focuses on providing a better client experience rather tha
 ---
 
 # Deployment Stack
+
+![Matrix Synapse containerized deployment stack showing Nginx reverse proxy, Synapse engine, PostgreSQL, and MinIO.](/images/matrix-synapse-deployment.svg)
 
 The current deployment consists of:
 

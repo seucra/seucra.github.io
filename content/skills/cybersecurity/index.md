@@ -1,9 +1,8 @@
 ---
 title: Cybersecurity
-
-level: Developing
-
-years: 2
+date: 2026-08-06
+lastmod: 2026-08-06
+level: Beginner
 
 evidence:
   - Vigilant
@@ -24,7 +23,7 @@ draft: false
 
 # Overview
 
-Cybersecurity is the long-term field I intend to build my career in.
+Cybersecurity is a serious area of interest and a possible future specialization; I am still at a beginner stage.
 
 My current approach emphasizes developing strong software engineering and systems knowledge first, then applying that foundation to security problems. Rather than focusing exclusively on offensive techniques, I am interested in understanding how secure systems are designed, implemented and maintained.
 
@@ -48,10 +47,10 @@ My present areas of study include:
 
 Although I still consider myself to be early in the field, I prefer learning through projects instead of isolated theory.
 
-Current practical work includes:
+Current practical learning and project context includes:
 
-- Building secure backend systems
-- Self-hosted infrastructure
+- Studying security-conscious backend and communication-system design
+- Practical hosting and infrastructure exposure
 - Matrix-based communication systems
 - Vulnerability research
 - Security-oriented architecture decisions
@@ -62,7 +61,7 @@ Current practical work includes:
 
 ## Vigilant
 
-Vigilant is my primary cybersecurity-oriented engineering project.
+Vigilant is my primary security-adjacent engineering project.
 
 The project investigates secure communication by building on the Matrix ecosystem instead of attempting to design a proprietary protocol. Development focuses on authentication, messaging, infrastructure and backend architecture while leveraging established security standards.
 
@@ -70,7 +69,7 @@ The project investigates secure communication by building on the Matrix ecosyste
 
 ## Vulnerability Prioritization
 
-This research project investigates how publicly available threat intelligence can be transformed into practical vulnerability prioritization.
+This active coursework project explores how publicly available threat intelligence can support practical vulnerability prioritization.
 
 Current work includes:
 
@@ -110,7 +109,7 @@ Current exposure includes:
 - Threat intelligence datasets
 - Matrix ecosystem
 - Docker-based deployments
-- Linux administration
+- Everyday Linux use and practical system recovery
 
 ---
 

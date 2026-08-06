@@ -2,8 +2,8 @@
 title: Rust Rosetta Code
 description: Early open-source contributions while learning Rust.
 
-date: 2026-07-01
-lastmod: 2026-08-04
+date: 2026-08-06
+lastmod: 2026-08-06
 
 repository:
 

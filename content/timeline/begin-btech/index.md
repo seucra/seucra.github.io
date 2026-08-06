@@ -1,12 +1,12 @@
 ---
-title: Began B.Tech in Computer Science
+title: Began B.Tech in Computer Engineering
 
-date: 2023-08-01
+date: 2024-08-01
 
 draft: false
 ---
 
-Beginning my Computer Science degree marked the transition from learning programming as coursework to viewing software engineering as a long-term career.
+Beginning my B.Tech in Computer Engineering marked the transition from learning programming as coursework to viewing software engineering as a long-term career.
 
 The early semesters focused on building a foundation through C, Python, Java, databases and operating systems while gradually becoming more comfortable with Linux and Git.
 

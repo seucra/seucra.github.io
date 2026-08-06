@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">Matrix Synapse Deployment Stack</title>
+  <desc id="desc">Containerized Matrix Synapse deployment using Nginx reverse proxy, PostgreSQL database, and MinIO object storage.</desc>
+  <rect width="960" height="360" rx="20" fill="#130c0d"/>
+  <g font-family="system-ui,sans-serif">
+    <text x="56" y="55" fill="#f7b6b9" font-size="18" font-weight="700" letter-spacing="2">MATRIX SYNAPSE DEPLOYMENT STACK</text>
+    <g fill="#211717" stroke="#544445" stroke-width="2">
+      <rect x="55" y="140" width="180" height="120" rx="12"/>
+      <rect x="345" y="140" width="270" height="120" rx="12"/>
+      <rect x="695" y="110" width="210" height="80" rx="12"/>
+      <rect x="695" y="210" width="210" height="80" rx="12"/>
+    </g>
+    <g fill="#f8e0e0" font-size="18" font-weight="700">
+      <text x="85" y="180">Nginx Proxy</text>
+      <text x="375" y="180">Matrix Synapse Engine</text>
+      <text x="735" y="150">PostgreSQL</text>
+      <text x="755" y="250">MinIO</text>
+    </g>
+    <g fill="#bca6a6" font-size="14">
+      <text x="80" y="210">TLS Termination</text>
+      <text x="80" y="230">CORS &amp; Headers</text>
+
+      <text x="375" y="210">Event Graph / Sync</text>
+      <text x="375" y="230">Docker Container</text>
+
+      <text x="720" y="172">Room &amp; Auth DB</text>
+      <text x="720" y="272">S3 Media Storage</text>
+    </g>
+    <g stroke="#ff5265" stroke-width="3">
+      <path d="M235 200h110"/>
+      <path d="M615 150h80"/>
+      <path d="M615 250h80"/>
+    </g>
+    <g fill="#ff5265">
+      <path d="m335 193 14 7-14 7z"/>
+      <path d="m685 143 14 7-14 7z"/>
+      <path d="m685 243 14 7-14 7z"/>
+    </g>
+  </g>
+</svg>

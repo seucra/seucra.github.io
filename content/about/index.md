@@ -1,20 +1,20 @@
 ---
 title: About
-description: Computer Science student focused on backend engineering, systems programming and cybersecurity.
+description: Shams Tabrez Ahmed (Seucra) is a Computer Engineering student documenting backend systems, Rust, Linux, infrastructure and cybersecurity learning.
 
-date: 2026-08-04
-lastmod: 2026-08-04
+date: 2026-08-06
+lastmod: 2026-08-06
 
 draft: false
 ---
 
 # About
 
-I'm Shams Tabrez Ahmed, a Computer Science student focused on backend engineering, systems programming and cybersecurity.
+I'm Shams Tabrez Ahmed (Seucra), a third-year B.Tech Computer Engineering student focused on backend systems, Rust, Linux, infrastructure and cybersecurity learning.
 
 Over the last few years my interests have shifted away from simply completing academic projects toward understanding how real software systems are designed, built and maintained. Rather than collecting technologies, I prefer using projects as vehicles to develop engineering depth.
 
-My current work is centered around Rust, distributed systems, Linux, backend architecture and secure communication.
+My current work is centered around Rust, backend architecture, Linux, secure communication and practical infrastructure. I write about the work and lessons behind it at [journal.seucra.tech](https://journal.seucra.tech).
 
 ## Current Focus
 
@@ -35,7 +35,7 @@ Vigilant is my flagship engineering project. It explores secure communication us
 
 ### Vulnerability Prioritization
 
-An applied cybersecurity research project investigating how public vulnerability intelligence from sources such as NVD, EPSS and CISA KEV can be combined into a practical prioritization workflow.
+An active college project exploring how public vulnerability intelligence from sources such as NVD, EPSS and CISA KEV can be combined into a practical prioritization workflow. It may develop into more rigorous research, but it is not presented as completed research.
 
 ## Technical Interests
 
@@ -73,4 +73,4 @@ Current areas of deliberate improvement include:
 
 ## Long-Term Goal
 
-My long-term objective is to become a backend and systems engineer capable of building reliable software, contributing to open-source projects and working on security-conscious infrastructure.
+My immediate objective is to become more technically capable and employable through deliberate practice, stronger fundamentals and well-understood work. Over time, I hope to contribute to reliable software, open source and security-conscious infrastructure.

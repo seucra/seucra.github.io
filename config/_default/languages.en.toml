@@ -2,7 +2,7 @@ disabled = false
 locale = "en"
 label = "English"
 weight = 1
-title = "Shams Tabrez Ahmed"
+title = "Shams Tabrez Ahmed (Seucra)"
 
 [params]
   displayName = "EN"
@@ -11,7 +11,7 @@ title = "Shams Tabrez Ahmed"
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  description = "The engineering portfolio of Shams Tabrez Ahmed (Seucra)."
   # copyright = "Copy, _right?_ :thinking_face:"
 
 # [params.author]

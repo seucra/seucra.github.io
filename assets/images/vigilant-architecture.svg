@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">Vigilant System Topology</title>
+  <desc id="desc">Vigilant frontend interacts with Rust WASM bridge, which connects to self-hosted Matrix Synapse, PostgreSQL, and MinIO.</desc>
+  <rect width="960" height="360" rx="20" fill="#130c0d"/>
+  <g font-family="system-ui,sans-serif">
+    <text x="56" y="55" fill="#f7b6b9" font-size="18" font-weight="700" letter-spacing="2">VIGILANT SYSTEM TOPOLOGY</text>
+    <g fill="#211717" stroke="#544445" stroke-width="2">
+      <rect x="55" y="110" width="220" height="180" rx="12"/>
+      <rect x="370" y="110" width="220" height="180" rx="12"/>
+      <rect x="685" y="110" width="220" height="80" rx="12"/>
+      <rect x="685" y="210" width="220" height="80" rx="12"/>
+    </g>
+    <g fill="#f8e0e0" font-size="18" font-weight="700">
+      <text x="105" y="150">Client Frontend</text>
+      <text x="400" y="150">WASM Bridge</text>
+      <text x="735" y="150">Matrix Synapse</text>
+      <text x="735" y="250">PostgreSQL / MinIO</text>
+    </g>
+    <g fill="#bca6a6" font-size="14">
+      <text x="95" y="185">TypeScript / React UI</text>
+      <text x="95" y="210">Room &amp; Timeline Views</text>
+      <text x="95" y="235">User Settings &amp; Auth</text>
+
+      <text x="405" y="185">Rust matrix-sdk</text>
+      <text x="405" y="210">Session &amp; Token State</text>
+      <text x="405" y="235">WASM Event Dispatcher</text>
+
+      <text x="715" y="172">Client-Server API</text>
+      <text x="715" y="272">Event Graph &amp; Storage</text>
+    </g>
+    <g stroke="#ff5265" stroke-width="3">
+      <path d="M275 200h95"/>
+      <path d="M590 150h95"/>
+      <path d="M590 250h95"/>
+    </g>
+    <g fill="#ff5265">
+      <path d="m360 193 14 7-14 7z"/>
+      <path d="m675 143 14 7-14 7z"/>
+      <path d="m675 243 14 7-14 7z"/>
+    </g>
+  </g>
+</svg>

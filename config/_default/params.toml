@@ -9,10 +9,10 @@ colorScheme = "blowfish"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 
-enableA11y = false
+enableA11y = true
 enableSearch = true
 enableCodeCopy = true
-enableStructuredBreadcrumbs = false
+enableStructuredBreadcrumbs = true
 # enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
 replyByEmail = false
@@ -27,7 +27,7 @@ disableTextInHeader = false
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
-# defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
+defaultSocialImage = "images/social-card.svg"
 hotlinkFeatureImage = false
 # Thumbnail aspect ratio as a number (e.g., "1.5", "1.0", "1.777")
 # thumbnailAspectRatio = "1.5"
@@ -50,7 +50,22 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   storedLanguageRedirect = true # Redirect to the stored language when a matching translation exists.
 
 [seo]
-# metaDescriptionOrder = ["summary", "description", "site"] # Controls the fallback order for the HTML meta description. Valid values are "summary", "description", and "site".
+metaDescriptionOrder = ["summary", "description", "site"]
+
+description = "The engineering portfolio of Shams Tabrez Ahmed (Seucra): a Computer Engineering student documenting backend systems, Rust, Linux, infrastructure and cybersecurity learning."
+keywords = ["Shams Tabrez Ahmed", "Seucra", "Rust", "backend engineering", "Matrix", "cybersecurity", "Linux", "infrastructure"]
+
+[author]
+  name = "Shams Tabrez Ahmed"
+  headline = "Computer Engineering student · Rust, backend systems, Linux and cybersecurity"
+  bio = "Shams Tabrez Ahmed (Seucra) documents practical learning in backend systems, Rust, Linux, infrastructure and cybersecurity."
+  links = [
+    { github = "https://github.com/seucra" },
+    { linkedin = "https://www.linkedin.com/in/s-t-ahmed/" },
+    { dev = "https://dev.to/seucra" },
+    { link = "https://journal.seucra.tech" },
+    { email = "mailto:tabrezahmed.sta33@gmail.com" }
+  ]
 
 [header]
   layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
@@ -58,12 +73,12 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = true
+  showThemeAttribution = false
   showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
+  layout = "custom" # bespoke portfolio homepage; source: layouts/partials/home/custom.html
   #homepageImage = "IMAGE.jpg" # used in: hero, and card
   showRecent = false
   showRecentItems = 6
@@ -186,6 +201,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # globalWidgetPosition = "right"
 
 [verification]
+  # Add verification tokens after claiming each property in Google Search Console / Bing Webmaster Tools.
   # google = ""
   # bing = ""
   # pinterest = ""
