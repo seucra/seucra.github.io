@@ -29,17 +29,17 @@ My current work is centered around Rust, backend architecture, Linux, secure com
 
 ## Current Projects
 
-### Vigilant & Matrix SDK Bridge
-An ongoing project exploring secure communication using the Matrix ecosystem, Rust, and WebAssembly, alongside extracting a small reusable bridge to npm (`@seucra/matrix-sdk-bridge`). Instead of attempting to reinvent messaging protocols, I focus on client integration and self-hosted Synapse infrastructure.
+### [Vigilant](/projects/vigilant/) & [Matrix SDK Bridge](/projects/matrix-sdk-bridge/)
+An ongoing project exploring secure communication using the Matrix ecosystem, Rust, and WebAssembly, alongside extracting a reusable bridge to npm ([`@seucra/matrix-sdk-bridge`](https://www.npmjs.com/package/@seucra/matrix-sdk-bridge) · [GitHub ↗](https://github.com/seucra/matrix-sdk-bridge)). Instead of attempting to reinvent messaging protocols, I focus on client integration and self-hosted Synapse infrastructure ([Read project log on journal ↗](https://journal.seucra.tech/posts/building-vigilant-cycle-1-complete/)).
 
-### Triton
-A multi-crate Rust experiment testing concurrent directory traversal (Rayon), project root detection, and caching build artifacts with SQLite and BLAKE3.
+### [Triton](/projects/triton/)
+A multi-crate Rust experiment testing concurrent directory traversal (Rayon), project root detection, and caching build artifacts with SQLite and BLAKE3 ([Triton architecture notes](/projects/triton/)).
 
-### CyberShield (SIH26184)
-Our student team project for Smart India Hackathon 2026 (Problem Statement SIH26184), designing a pipeline to forecast cash-out destinations and apply partial liens in financial cyber fraud cases.
+### [CyberShield (SIH26184)](/projects/sih2026/)
+Our student team project for Smart India Hackathon 2026 (Problem Statement ID: **SIH26184**), designing a pipeline to forecast cash-out destinations and apply partial liens in financial cyber fraud cases ([GitHub ↗](https://github.com/harshada2576/SIH2026) · [Deep Dive Article on journal ↗](https://journal.seucra.tech/posts/the-architecture-of-interception-sih26184/)).
 
-### Vulnerability Prioritization (VTS)
-A collaborative coursework research project with college peers at VIT Mumbai exploring pre-scoring CVSS estimation and EPSS threat intelligence using DuckDB and scikit-learn.
+### [Vulnerability Prioritization (VTS)](/research/vulnerability-prioritization/)
+A collaborative coursework research project with college peers at VIT Mumbai exploring pre-scoring CVSS estimation and EPSS threat intelligence using DuckDB and scikit-learn ([GitHub Repository ↗](https://github.com/seucra/vulnarability-prioritization-triage-system)).
 
 ## Technical Interests
 
