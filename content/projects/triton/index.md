@@ -31,7 +31,9 @@ draft: false
 > • **Status:** Active local systems development (`product/Triton` Cargo workspace)  
 > • **Language & Stack:** Rust (Edition 2021) · Rayon concurrency · Bundled SQLite · BLAKE3 · xxHash · Clap v4  
 > • **Workspace Crates:** `triton-core` · `triton-engine` · `triton-cli`  
+> • **Related Journal Article:** [Triton: Building a Deterministic Project Analyzer in Rust ↗](https://journal.seucra.tech/posts/triton-deterministic-project-analyzer-rust/)  
 > • **Related Skills:** [Rust](/skills/rust/) · [Systems Programming](/skills/systems-programming/)
+
 
 **Triton** is a systems-level filesystem intelligence engine built in Rust. It provides deterministic, marker-based detection of software project roots, establishes hierarchical ownership of filesystem entities via nearest-ancestor semantics, and classifies generated build artifacts (`target/`, `node_modules/`, `venv/`, `dist/`, `build/`) with verifiable evidence.
 
