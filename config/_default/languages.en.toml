@@ -9,8 +9,8 @@ title = "Shams Tabrez Ahmed"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
+  logo = "img/logo-dark.png"
+  secondaryLogo = "img/logo-light.png"
   description = "Personal website and notes of Shams Tabrez Ahmed (Seucra), an undergraduate Computer Engineering student in Mumbai exploring backend systems, Rust, Linux, and cybersecurity."
   # copyright = "Copy, _right?_ :thinking_face:"
 

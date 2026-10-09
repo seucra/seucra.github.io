@@ -490,3 +490,22 @@ article > footer.max-w-prose { max-width: 72rem !important; }
   color: var(--seucra-primary);
   background: var(--seucra-primary-soft);
 }
+
+/* Site Navbar Logo: Spider Badges */
+.logo {
+  border-radius: 9999px !important;
+  max-height: 2.25rem !important;
+  max-width: 2.25rem !important;
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  object-fit: cover !important;
+  border: 1px solid var(--seucra-outline) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+  transition: border-color 0.2s ease, transform 0.2s ease !important;
+}
+
+.logo:hover {
+  border-color: var(--seucra-primary) !important;
+  transform: scale(1.05);
+}
+
