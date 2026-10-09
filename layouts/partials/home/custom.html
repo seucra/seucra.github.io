@@ -41,52 +41,77 @@
     </div>
     <div class="focus-grid">
       <!-- Vigilant -->
-      <a class="focus-card featured" href="{{ "projects/vigilant/" | relURL }}">
+      <div class="focus-card featured">
         <span class="card-index">01 / ONGOING PROJECT</span>
         <h3>Vigilant</h3>
         <p>An ongoing project exploring secure communication using the Matrix ecosystem, Rust, WebAssembly, and a self-hosted Synapse server rather than reinventing cryptography.</p>
-        <span class="card-link">Project overview →</span>
-      </a>
+        <div class="card-action-row">
+          <a class="card-primary-link" href="{{ "projects/vigilant/" | relURL }}">Overview →</a>
+          <a class="card-pill" href="https://github.com/seucra/Vigilant" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="card-pill" href="https://journal.seucra.tech/posts/building-vigilant-cycle-1-complete/" target="_blank" rel="noopener">Articles ↗</a>
+        </div>
+      </div>
 
       <!-- Matrix SDK Bridge -->
-      <a class="focus-card" href="{{ "projects/matrix-sdk-bridge/" | relURL }}">
+      <div class="focus-card">
         <span class="card-index">02 / EXTRACTED LIBRARY</span>
         <h3>Matrix SDK Bridge</h3>
         <p>A small Rust-to-WebAssembly bridge published on npm (<code>@seucra/matrix-sdk-bridge</code>), extracted from Vigilant so browser JavaScript can interact with the client cleanly.</p>
-        <span class="card-link">Library notes →</span>
-      </a>
+        <div class="card-action-row">
+          <a class="card-primary-link" href="{{ "projects/matrix-sdk-bridge/" | relURL }}">Notes →</a>
+          <a class="card-pill" href="https://github.com/seucra/matrix-sdk-bridge" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="card-pill" href="https://www.npmjs.com/package/@seucra/matrix-sdk-bridge" target="_blank" rel="noopener">npm ↗</a>
+          <a class="card-pill" href="https://journal.seucra.tech/posts/publishing-my-first-rust-npm-package/" target="_blank" rel="noopener">Release ↗</a>
+        </div>
+      </div>
 
       <!-- Triton -->
-      <a class="focus-card" href="{{ "projects/triton/" | relURL }}">
+      <div class="focus-card">
         <span class="card-index">03 / SYSTEMS EXPERIMENT</span>
         <h3>Triton</h3>
         <p>A multi-crate Rust CLI utility experimenting with multi-threaded directory walks (Rayon), project root detection, and caching build artifacts with SQLite and BLAKE3.</p>
-        <span class="card-link">System notes →</span>
-      </a>
+        <div class="card-action-row">
+          <a class="card-primary-link" href="{{ "projects/triton/" | relURL }}">System notes →</a>
+          <a class="card-pill" href="{{ "skills/rust/" | relURL }}">Rust 2021</a>
+          <a class="card-pill" href="{{ "skills/systems-programming/" | relURL }}">Multi-Crate</a>
+        </div>
+      </div>
 
       <!-- VTS -->
-      <a class="focus-card" href="{{ "research/vulnerability-prioritization/" | relURL }}">
+      <div class="focus-card">
         <span class="card-index">04 / COLLEGE STUDY</span>
         <h3>Vulnerability Prioritization</h3>
         <p>A collaborative academic project with college peers exploring how NVD disclosures, EPSS likelihoods, and DuckDB analytics can support practical vulnerability triage.</p>
-        <span class="card-link">Read paper summary →</span>
-      </a>
+        <div class="card-action-row">
+          <a class="card-primary-link" href="{{ "research/vulnerability-prioritization/" | relURL }}">Summary →</a>
+          <a class="card-pill" href="https://github.com/seucra/vulnarability-prioritization-triage-system" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="card-pill" href="https://github.com/seucra/vulnarability-prioritization-triage-system/blob/main/docs/research/vts_research_paper.pdf" target="_blank" rel="noopener">Paper PDF ↗</a>
+        </div>
+      </div>
 
       <!-- CyberShield (SIH26184) -->
-      <a class="focus-card" href="{{ "projects/sih2026/" | relURL }}">
+      <div class="focus-card">
         <span class="card-index">05 / HACKATHON (PS SIH26184)</span>
         <h3>CyberShield</h3>
         <p>Our team’s submission for Smart India Hackathon (Problem Statement SIH26184), designing a pipeline to forecast cash-out points and apply partial account holds in cyber fraud cases.</p>
-        <span class="card-link">Hackathon breakdown →</span>
-      </a>
+        <div class="card-action-row">
+          <a class="card-primary-link" href="{{ "projects/sih2026/" | relURL }}">Breakdown →</a>
+          <a class="card-pill" href="https://github.com/harshada2576/SIH2026" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="card-pill" href="https://journal.seucra.tech/posts/the-architecture-of-interception-sih26184/" target="_blank" rel="noopener">Article ↗</a>
+          <a class="card-pill" href="https://sih-render.seucra.tech/" target="_blank" rel="noopener">API ↗</a>
+        </div>
+      </div>
 
       <!-- CipherLink -->
-      <a class="focus-card" href="{{ "projects/cipherlink/" | relURL }}">
+      <div class="focus-card">
         <span class="card-index">06 / RETROSPECTIVE</span>
         <h3>CipherLink</h3>
         <p>An earlier personal attempt to write a secure messenger from scratch. It taught me how difficult protocol design is and convinced me to adopt Matrix instead.</p>
-        <span class="card-link">Retrospective notes →</span>
-      </a>
+        <div class="card-action-row">
+          <a class="card-primary-link" href="{{ "projects/cipherlink/" | relURL }}">Lessons →</a>
+          <a class="card-pill" href="{{ "projects/vigilant/" | relURL }}">Evolved to Vigilant →</a>
+        </div>
+      </div>
     </div>
   </section>
 

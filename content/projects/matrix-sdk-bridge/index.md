@@ -17,6 +17,15 @@ draft: false
 
 # Overview
 
+> [!TIP]
+> **Library Links & References:**  
+> • **GitHub Repository:** [github.com/seucra/matrix-sdk-bridge ↗](https://github.com/seucra/matrix-sdk-bridge)  
+> • **npm Registry:** [@seucra/matrix-sdk-bridge on npmjs.com ↗](https://www.npmjs.com/package/@seucra/matrix-sdk-bridge)  
+> • **Parent System:** [Vigilant (Secure Matrix Client)](/projects/vigilant/)  
+> • **Related Journal Articles:**  
+> &nbsp;&nbsp;– [Extracting Matrix SDK into a Rust WASM Library ↗](https://journal.seucra.tech/posts/extracting-matrix-sdk-into-a-rust-wasm-library/)  
+> &nbsp;&nbsp;– [Publishing My First Rust npm Package ↗](https://journal.seucra.tech/posts/publishing-my-first-rust-npm-package/)
+
 Matrix SDK Bridge is a Rust-to-WebAssembly library that provides a JavaScript-friendly interface around selected Matrix SDK functionality. It began as the integration layer for Vigilant and is being maintained as an independent library so the boundary between application code and Matrix integration remains clear.
 
 The published package is [`@seucra/matrix-sdk-bridge`](https://www.npmjs.com/package/@seucra/matrix-sdk-bridge). Its API is still evolving and should not yet be treated as stable.

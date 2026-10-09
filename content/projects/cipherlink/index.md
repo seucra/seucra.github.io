@@ -26,6 +26,12 @@ draft: false
 
 # Overview
 
+> [!NOTE]
+> **Evolutionary Note:** CipherLink was archived after the architectural decision to avoid protocol reinvention. It evolved directly into **[Vigilant](/projects/vigilant/)** on the open Matrix standard.  
+> • **Successor Project:** [Vigilant (Secure Matrix Client)](/projects/vigilant/)  
+> • **Extracted Library:** [@seucra/matrix-sdk-bridge (npm)](/projects/matrix-sdk-bridge/)  
+> • **Journal Retrospective:** [Building Vigilant — Cycle 1 Complete ↗](https://journal.seucra.tech/posts/building-vigilant-cycle-1-complete/)
+
 CipherLink was the first serious attempt at building a secure communication platform.
 
 Initially, the goal was to design a messaging system from the ground up with complete control over authentication, messaging and security. As development progressed, the project became an opportunity to study how modern communication systems are actually engineered.

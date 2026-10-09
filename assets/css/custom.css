@@ -448,3 +448,45 @@ h1, h2, h3, h4, h5, h6, .title, header h1, main h1, .article-title, .text-neutra
 }
 
 article > footer.max-w-prose { max-width: 72rem !important; }
+
+/* Card Action Row & Sub-Links */
+.card-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--seucra-outline);
+}
+
+.card-primary-link {
+  color: var(--seucra-primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.card-primary-link:hover {
+  text-decoration: underline;
+}
+
+.card-pill {
+  font-size: 0.74rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 600;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--seucra-outline);
+  color: var(--seucra-muted);
+  text-decoration: none;
+  transition: all 0.15s ease;
+  background: var(--seucra-surface);
+}
+
+.card-pill:hover {
+  border-color: var(--seucra-primary);
+  color: var(--seucra-primary);
+  background: var(--seucra-primary-soft);
+}

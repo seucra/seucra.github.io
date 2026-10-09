@@ -5,7 +5,7 @@ description: Early open-source contributions while learning Rust.
 date: 2026-08-06
 lastmod: 2026-08-06
 
-repository:
+repository: https://github.com/seucra/rust-rosetta
 
 tags:
   - open-source
@@ -16,6 +16,9 @@ draft: false
 ---
 
 # Overview
+
+> [!TIP]
+> **Repository:** [github.com/seucra/rust-rosetta ↗](https://github.com/seucra/rust-rosetta)
 
 Rust Rosetta Code represents one of my earliest deliberate attempts to contribute to open source while learning Rust.
 

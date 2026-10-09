@@ -31,7 +31,17 @@ draft: false
 
 # Overview
 
-Vigilant is my flagship engineering project.
+> [!TIP]
+> **Project Links & References:**  
+> • **GitHub Repository:** [github.com/seucra/Vigilant ↗](https://github.com/seucra/Vigilant)  
+> • **Extracted Library:** [@seucra/matrix-sdk-bridge (npm) ↗](https://www.npmjs.com/package/@seucra/matrix-sdk-bridge) · [Library Record](/projects/matrix-sdk-bridge/)  
+> • **Infrastructure:** [Self-Hosted Matrix Synapse](/infrastructure/matrix-synapse/)  
+> • **Related Journal Articles:**  
+> &nbsp;&nbsp;– [Building Vigilant — Cycle 1 Complete ↗](https://journal.seucra.tech/posts/building-vigilant-cycle-1-complete/)  
+> &nbsp;&nbsp;– [Architecture Behind Vigilant ↗](https://journal.seucra.tech/posts/architecture-behind-vigilant/)  
+> &nbsp;&nbsp;– [Matrix Timeline Pagination Design ↗](https://journal.seucra.tech/posts/matrix-timeline-pagination-design/)
+
+Vigilant is my main long-term personal engineering project.
 
 It explores how a modern secure communication platform can be built by combining Rust, WebAssembly and the Matrix ecosystem instead of attempting to reinvent mature messaging infrastructure.
 
