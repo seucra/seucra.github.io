@@ -1,0 +1,69 @@
+/* Seucra Scheme — Dual Mode:
+   Dark: Calm Slate / Grey (Zero neon, relaxed systems tone)
+   Light: Clean Off-White with Soft Blush accents ("pink/blush in little")
+*/
+:root {
+  --color-neutral: 255, 255, 255;
+  /* Light mode neutrals (clean soft off-white & slate) */
+  --color-neutral-50: 250, 249, 249;
+  --color-neutral-100: 245, 244, 244;
+  --color-neutral-200: 235, 233, 234;
+  --color-neutral-300: 220, 218, 220;
+  --color-neutral-400: 148, 163, 184;
+  --color-neutral-500: 100, 116, 139;
+  --color-neutral-600: 71, 85, 105;
+  --color-neutral-700: 51, 65, 85;
+  --color-neutral-800: 30, 41, 59;
+  --color-neutral-900: 15, 23, 42;
+
+  /* Light mode primary: Tasteful soft blush / rose */
+  --color-primary-50: 253, 242, 244;
+  --color-primary-100: 250, 226, 230;
+  --color-primary-200: 245, 198, 206;
+  --color-primary-300: 236, 160, 172;
+  --color-primary-400: 222, 116, 133;
+  --color-primary-500: 200, 90, 107;
+  --color-primary-600: 178, 71, 87;
+  --color-primary-700: 149, 54, 69;
+  --color-primary-800: 125, 47, 59;
+  --color-primary-900: 104, 43, 53;
+
+  /* Secondary: Slate */
+  --color-secondary-50: 248, 250, 252;
+  --color-secondary-100: 241, 245, 249;
+  --color-secondary-200: 226, 232, 240;
+  --color-secondary-300: 203, 213, 225;
+  --color-secondary-400: 148, 163, 184;
+  --color-secondary-500: 100, 116, 139;
+  --color-secondary-600: 71, 85, 105;
+  --color-secondary-700: 51, 65, 85;
+  --color-secondary-800: 30, 41, 59;
+  --color-secondary-900: 15, 23, 42;
+}
+
+html.dark {
+  /* Dark mode neutrals: Calm slate / charcoal */
+  --color-neutral-50: 226, 232, 240;
+  --color-neutral-100: 203, 213, 225;
+  --color-neutral-200: 148, 163, 184;
+  --color-neutral-300: 100, 116, 139;
+  --color-neutral-400: 71, 85, 105;
+  --color-neutral-500: 51, 65, 85;
+  --color-neutral-600: 39, 50, 68;
+  --color-neutral-700: 30, 38, 51;
+  --color-neutral-800: 22, 29, 39;
+  --color-neutral-900: 15, 20, 28;
+  --color-neutral: 226, 232, 240;
+
+  /* Dark mode primary: Relaxed steel / slate blue accent */
+  --color-primary-50: 15, 23, 42;
+  --color-primary-100: 22, 32, 50;
+  --color-primary-200: 34, 49, 74;
+  --color-primary-300: 56, 80, 116;
+  --color-primary-400: 94, 130, 178;
+  --color-primary-500: 126, 162, 198;
+  --color-primary-600: 159, 189, 219;
+  --color-primary-700: 191, 211, 233;
+  --color-primary-800: 222, 233, 245;
+  --color-primary-900: 241, 246, 252;
+}

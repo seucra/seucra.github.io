@@ -2,7 +2,7 @@ disabled = false
 locale = "en"
 label = "English"
 weight = 1
-title = "Shams Tabrez Ahmed (Seucra)"
+title = "Shams Tabrez Ahmed"
 
 [params]
   displayName = "EN"
@@ -11,7 +11,7 @@ title = "Shams Tabrez Ahmed (Seucra)"
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "The engineering portfolio of Shams Tabrez Ahmed (Seucra)."
+  description = "The engineering web of Shams Tabrez Ahmed (Seucra): backend systems, Rust, Linux infrastructure, and cybersecurity research."
   # copyright = "Copy, _right?_ :thinking_face:"
 
 # [params.author]

@@ -19,6 +19,11 @@ pageRef = "infrastructure"
 weight = 40
 
 [[main]]
+name = "Timeline"
+pageRef = "timeline"
+weight = 45
+
+[[main]]
 name = "Journal"
 url = "https://journal.seucra.tech"
 weight = 50

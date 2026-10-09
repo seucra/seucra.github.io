@@ -1,51 +1,149 @@
 <div class="seucra-home">
+  <!-- Hero Section: The Spider and the Web -->
   <section class="seucra-hero" aria-labelledby="home-title">
-    <p class="eyebrow">SEUCRA.TECH / ENGINEERING NOTES</p>
+    <p class="eyebrow">SEUCRA.TECH / THE ENGINEERING WEB</p>
     <div class="hero-grid">
       <div>
-        <h1 id="home-title">Shams Tabrez Ahmed <span>(Seucra)</span></h1>
-        <p class="hero-lede">A Computer Engineering student building depth through backend systems, Rust, Linux, infrastructure, and cybersecurity learning.</p>
-        <p class="hero-copy">I document projects as they evolve: the decisions, boundaries, and lessons—not just the finished artifact.</p>
+        <h1 id="home-title">Shams Tabrez Ahmed</h1>
+        <p class="hero-lede">I am the builder; this domain is the web. An interconnected architecture linking systems engineering, Rust libraries, cybersecurity research, and distributed infrastructure.</p>
+        <p class="hero-copy">Every node in this ecosystem represents deliberate engineering: making protocol boundaries, performance trade-offs, and verifiable design decisions visible.</p>
         <div class="home-actions">
-          <a class="home-action" href="{{ "connect/" | relURL }}">Connect</a>
           <a class="home-action primary" href="{{ "projects/" | relURL }}">Explore projects</a>
-          <a class="home-action" href="https://journal.seucra.tech">Read the journal <span aria-hidden="true">↗</span></a>
+          <a class="home-action" href="{{ "research/" | relURL }}">Research &amp; papers</a>
+          <a class="home-action" href="https://journal.seucra.tech" target="_blank" rel="noopener">Read the journal <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="hero-mark" aria-hidden="true">
-        <div class="mark-node mark-node-a"></div><div class="mark-node mark-node-b"></div><div class="mark-node mark-node-c"></div>
-        <svg viewBox="0 0 440 360" fill="none"><path d="M72 102 220 42l148 60v156l-148 60-148-60V102Z"/><path d="M220 42v276M72 102l148 60 148-60M72 258l148-60 148 60"/><circle cx="220" cy="180" r="33"/></svg>
-        <p>learn → build → document</p>
+        <div class="mark-node mark-node-a"></div>
+        <div class="mark-node mark-node-b"></div>
+        <div class="mark-node mark-node-c"></div>
+        <svg viewBox="0 0 440 360" fill="none">
+          <!-- Concentric Web Geometry -->
+          <polygon points="220,30 380,95 380,265 220,330 60,265 60,95" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+          <polygon points="220,70 330,115 330,245 220,290 110,245 110,115" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          <polygon points="220,110 280,135 280,225 220,250 160,225 160,135" stroke="currentColor" stroke-width="1.2" opacity="0.8"/>
+          <!-- Radial Spoke Lines connecting the web to center -->
+          <line x1="220" y1="30" x2="220" y2="330" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+          <line x1="60" y1="95" x2="380" y2="265" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+          <line x1="60" y1="265" x2="380" y2="95" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+          <!-- Central Nexus -->
+          <circle cx="220" cy="180" r="16"/>
+          <circle cx="220" cy="180" r="6" fill="var(--seucra-primary)"/>
+        </svg>
+        <p>nexus // core systems &amp; network</p>
       </div>
     </div>
   </section>
 
+  <!-- Core Flagship Projects Section -->
   <section class="home-section" aria-labelledby="focus-title">
-    <div class="section-intro"><p class="eyebrow">CURRENT DIRECTION</p><h2 id="focus-title">Work with a story behind it.</h2></div>
+    <div class="section-intro">
+      <p class="eyebrow">PRIMARY NODES</p>
+      <h2 id="focus-title">Flagship systems &amp; published software.</h2>
+    </div>
     <div class="focus-grid">
-      <a class="focus-card featured" href="{{ "projects/vigilant/" | relURL }}"><span class="card-index">01 / FLAGSHIP</span><h3>Vigilant</h3><p>Matrix-based secure communication work focused on Rust, a WebAssembly bridge, client integration, and supporting infrastructure.</p><span class="card-link">Project record →</span></a>
-      <a class="focus-card" href="{{ "projects/matrix-sdk-bridge/" | relURL }}"><span class="card-index">02 / LIBRARY</span><h3>Matrix SDK Bridge</h3><p>A reusable Rust-to-WebAssembly bridge, extracted from Vigilant for JavaScript-facing Matrix functionality.</p><span class="card-link">Library record →</span></a>
-      <a class="focus-card" href="{{ "research/vulnerability-prioritization/" | relURL }}"><span class="card-index">03 / ACTIVE STUDY</span><h3>Vulnerability Prioritization</h3><p>Coursework exploring how NVD, EPSS, and CISA KEV data can support practical prioritization.</p><span class="card-link">Research record →</span></a>
+      <!-- Vigilant -->
+      <a class="focus-card featured" href="{{ "projects/vigilant/" | relURL }}">
+        <span class="card-index">01 / FLAGSHIP SYSTEM</span>
+        <h3>Vigilant</h3>
+        <p>Secure communication platform built on the Matrix ecosystem using Rust, WebAssembly, and custom self-hosted infrastructure.</p>
+        <span class="card-link">Architecture record →</span>
+      </a>
+
+      <!-- Matrix SDK Bridge -->
+      <a class="focus-card" href="{{ "projects/matrix-sdk-bridge/" | relURL }}">
+        <span class="card-index">02 / PUBLISHED PACKAGE</span>
+        <h3>Matrix SDK Bridge</h3>
+        <p>Published npm package <code>@seucra/matrix-sdk-bridge</code>: a modular Rust-to-WebAssembly bridge exposing Matrix client capabilities.</p>
+        <span class="card-link">Library record →</span>
+      </a>
+
+      <!-- Triton -->
+      <a class="focus-card" href="{{ "projects/triton/" | relURL }}">
+        <span class="card-index">03 / SYSTEMS ENGINE</span>
+        <h3>Triton</h3>
+        <p>High-performance filesystem project detector and artifact classifier in Rust, built with multi-crate workspace architecture.</p>
+        <span class="card-link">Systems record →</span>
+      </a>
+
+      <!-- VTS -->
+      <a class="focus-card" href="{{ "research/vulnerability-prioritization/" | relURL }}">
+        <span class="card-index">04 / RESEARCH &amp; PAPER</span>
+        <h3>VTS Prioritization</h3>
+        <p>Machine learning triage pipeline and publication-time exploitation prediction integrating NVD, EPSS, and DuckDB analytics.</p>
+        <span class="card-link">Research paper →</span>
+      </a>
+
+      <!-- CyberShield -->
+      <a class="focus-card" href="{{ "projects/sih2026/" | relURL }}">
+        <span class="card-index">05 / NATIONAL CYBER DEFENSE</span>
+        <h3>CyberShield (SIH26184)</h3>
+        <p>Predictive analytics and cash egress interception framework for financial cyber fraud mitigation (MHA / I4C CIS Division).</p>
+        <span class="card-link">Defense record →</span>
+      </a>
+
+      <!-- CipherLink -->
+      <a class="focus-card" href="{{ "projects/cipherlink/" | relURL }}">
+        <span class="card-index">06 / PROTOCOL FOUNDATION</span>
+        <h3>CipherLink</h3>
+        <p>The cryptographic messaging foundation whose architectural lessons guided the pivot to the open Matrix standard.</p>
+        <span class="card-link">Historical record →</span>
+      </a>
     </div>
   </section>
 
-  <section class="home-section home-systems" aria-labelledby="systems-title">
-    <div class="section-intro"><p class="eyebrow">SYSTEMS, NOT BUZZWORDS</p><h2 id="systems-title">The work I’m deliberately growing into.</h2></div>
-    <div class="systems-grid">
-      <div><span>01</span><h3>Backend systems</h3><p>Authentication, sessions, room and timeline flows, service integration, and careful system boundaries.</p></div>
-      <div><span>02</span><h3>Rust &amp; WebAssembly</h3><p>Learning Rust through a real Matrix integration, smaller library work, and open-source contributions.</p></div>
-      <div><span>03</span><h3>Linux &amp; infrastructure</h3><p>Practical DNS, hosting, containers, reverse proxies, storage, and self-hosted services.</p></div>
-      <div><span>04</span><h3>Security learning</h3><p>Security-conscious design, beginner wargame practice, and a growing interest in vulnerability management.</p></div>
+  <!-- Connected Subdomains & Infrastructure -->
+  <section class="home-section" aria-labelledby="subdomains-title">
+    <div class="section-intro">
+      <p class="eyebrow">TOPOLOGY</p>
+      <h2 id="subdomains-title">The connected subdomains.</h2>
+    </div>
+    <div class="network-grid">
+      <a href="https://journal.seucra.tech" target="_blank" rel="noopener">
+        <span>SUBDOMAIN // JOURNAL</span>
+        <h3>journal.seucra.tech ↗</h3>
+        <p>The dedicated engineering journal housing chronological milestones, deep-dive architectural post-mortems, and technical study notes.</p>
+      </a>
+      <a href="{{ "infrastructure/" | relURL }}">
+        <span>SUBDOMAIN // BOT GATEWAY</span>
+        <h3>bot.seucra.tech</h3>
+        <p>Cloudflare Workers edge endpoint managing Telegram webhook routing and serverless operations with Cloudflare WAF shielding.</p>
+      </a>
+      <a href="{{ "infrastructure/" | relURL }}">
+        <span>SUBDOMAIN // OBJECT STORAGE</span>
+        <h3>cdn.seucra.tech</h3>
+        <p>Global Cloudflare R2 content delivery network handling releases, build artifacts, and static distribution.</p>
+      </a>
+      <a href="https://sih-render.seucra.tech/" target="_blank" rel="noopener">
+        <span>SUBDOMAIN // LIVE API</span>
+        <h3>sih-render.seucra.tech ↗</h3>
+        <p>Cloud API deployment serving real-time cash egress interception algorithms and analytical risk evaluations.</p>
+      </a>
     </div>
   </section>
 
+  <!-- Dedicated Writing & Timeline Section -->
   <section class="home-section home-writing" aria-labelledby="writing-title">
-    <div><p class="eyebrow">ORIGINAL WRITING</p><h2 id="writing-title">The journal is where the details live.</h2><p>Project logs, architecture decisions, Rust and Matrix learning, Linux and infrastructure notes, and security research reflections—published first on <a href="https://journal.seucra.tech">journal.seucra.tech</a>.</p></div>
-    <a class="home-action" href="https://journal.seucra.tech">Visit the journal <span aria-hidden="true">↗</span></a>
+    <div>
+      <p class="eyebrow">DEDICATED JOURNAL &amp; TIMELINE</p>
+      <h2 id="writing-title">Chronological logs live in the journal.</h2>
+      <p>The main portfolio holds high-level architecture and verified evidence. For step-by-step development logs, timeline milestones, DSA journeys, and deep technical reflections, visit the dedicated journal on <a href="https://journal.seucra.tech" target="_blank" rel="noopener">journal.seucra.tech</a>.</p>
+    </div>
+    <a class="home-action" href="https://journal.seucra.tech" target="_blank" rel="noopener">Visit journal.seucra.tech <span aria-hidden="true">↗</span></a>
   </section>
 
+  <!-- Footer Navigation -->
   <section class="home-section home-footer-cta" aria-labelledby="more-title">
-    <p class="eyebrow">EXPLORE THE RECORD</p><h2 id="more-title">Projects are the evidence. Documentation explains the reasoning.</h2>
-    <div class="text-links"><a href="{{ "about/" | relURL }}">About</a><a href="{{ "projects/" | relURL }}">Projects</a><a href="{{ "research/" | relURL }}">Research</a><a href="{{ "infrastructure/" | relURL }}">Infrastructure</a><a href="https://journal.seucra.tech">Journal</a><a href="{{ "connect/" | relURL }}">Connect</a></div>
+    <p class="eyebrow">ENGINEERING PROOF</p>
+    <h2 id="more-title">Projects are the evidence. Documentation explains the reasoning.</h2>
+    <div class="text-links">
+      <a href="{{ "about/" | relURL }}">About</a>
+      <a href="{{ "projects/" | relURL }}">Projects</a>
+      <a href="{{ "research/" | relURL }}">Research</a>
+      <a href="{{ "infrastructure/" | relURL }}">Infrastructure</a>
+      <a href="{{ "timeline/" | relURL }}">Timeline</a>
+      <a href="https://journal.seucra.tech" target="_blank" rel="noopener">Journal</a>
+      <a href="{{ "connect/" | relURL }}">Connect</a>
+    </div>
   </section>
 </div>

@@ -13,7 +13,7 @@ priority: flagship
 ownership: personal
 collaboration: frontend/backend collaboration
 
-github:
+github: https://github.com/seucra/Vigilant
 website:
 demo:
 paper:
