@@ -33,7 +33,7 @@ draft: false
 
 # Overview
 
-CyberShield was built for **Smart India Hackathon 2026** (Problem Statement ID: **26184**), sponsored by the **Ministry of Home Affairs (MHA)** and the **Indian Cyber Crime Coordination Centre (I4C)** under the CIS Division.
+CyberShield was built for **Smart India Hackathon 2026** (Problem Statement ID: **SIH26184**), sponsored by the **Ministry of Home Affairs (MHA)** and the **Indian Cyber Crime Coordination Centre (I4C)** under the CIS Division.
 
 The objective: close India's critical 15-minute window in financial cyber fraud. When fraudsters execute unauthorized UPI, IMPS, or AEPS debits, stolen funds are rapidly layered across multiple intermediate mule accounts and withdrawn as physical paper cash at ATMs or AEPS micro-terminals within 15–30 minutes—hours before victims report to the 1930 helpline or the National Cybercrime Reporting Portal (NCRP).
 

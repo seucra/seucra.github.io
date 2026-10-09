@@ -29,13 +29,17 @@ My current work is centered around Rust, backend architecture, Linux, secure com
 
 ## Current Projects
 
-### Vigilant
+### Vigilant & Matrix SDK Bridge
+An ongoing project exploring secure communication using the Matrix ecosystem, Rust, and WebAssembly, alongside extracting a small reusable bridge to npm (`@seucra/matrix-sdk-bridge`). Instead of attempting to reinvent messaging protocols, I focus on client integration and self-hosted Synapse infrastructure.
 
-Vigilant is my flagship engineering project. It explores secure communication using the Matrix ecosystem, Rust and WebAssembly. Instead of attempting to reinvent secure messaging protocols, the project builds upon Matrix while focusing on reliable backend engineering and infrastructure.
+### Triton
+A multi-crate Rust experiment testing concurrent directory traversal (Rayon), project root detection, and caching build artifacts with SQLite and BLAKE3.
 
-### Vulnerability Prioritization
+### CyberShield (SIH26184)
+Our student team project for Smart India Hackathon 2026 (Problem Statement SIH26184), designing a pipeline to forecast cash-out destinations and apply partial liens in financial cyber fraud cases.
 
-An active college project exploring how public vulnerability intelligence from sources such as NVD, EPSS and CISA KEV can be combined into a practical prioritization workflow. It may develop into more rigorous research, but it is not presented as completed research.
+### Vulnerability Prioritization (VTS)
+A collaborative coursework research project with college peers at VIT Mumbai exploring pre-scoring CVSS estimation and EPSS threat intelligence using DuckDB and scikit-learn.
 
 ## Technical Interests
 

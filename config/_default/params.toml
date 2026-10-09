@@ -52,13 +52,13 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [seo]
 metaDescriptionOrder = ["summary", "description", "site"]
 
-description = "The engineering portfolio of Shams Tabrez Ahmed (Seucra): a Computer Engineering student documenting backend systems, Rust, Linux, infrastructure and cybersecurity learning."
-keywords = ["Shams Tabrez Ahmed", "Seucra", "Rust", "backend engineering", "Matrix", "cybersecurity", "Linux", "infrastructure"]
+description = "Personal website and notes of Shams Tabrez Ahmed (Seucra), an undergraduate Computer Engineering student in Mumbai exploring backend systems, Rust, Linux, and cybersecurity."
+keywords = ["Shams Tabrez Ahmed", "Seucra", "Rust", "backend engineering", "Matrix", "cybersecurity", "Linux", "systems learning"]
 
 [author]
   name = "Shams Tabrez Ahmed"
-  headline = "Computer Engineering student · Rust, backend systems, Linux and cybersecurity"
-  bio = "Shams Tabrez Ahmed (Seucra) documents practical learning in backend systems, Rust, Linux, infrastructure and cybersecurity."
+  headline = "Computer Engineering student · learning backend systems, Rust, Linux, and cybersecurity"
+  bio = "Undergraduate student in Mumbai documenting what I build, break, and learn along the way."
   links = [
     { github = "https://github.com/seucra" },
     { linkedin = "https://www.linkedin.com/in/s-t-ahmed/" },

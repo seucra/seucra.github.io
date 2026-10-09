@@ -1,6 +1,6 @@
 ---
 title: Shams Tabrez Ahmed
-description: Architect of the Seucra Ecosystem — backend systems, Rust, Linux infrastructure, and cybersecurity research.
+description: Undergraduate Computer Engineering student in Mumbai documenting backend systems, Rust, Linux, and cybersecurity learning.
 
 cascade:
   showReadingTime: false
@@ -8,48 +8,50 @@ cascade:
 
 # Shams Tabrez Ahmed
 
-I am the builder; **seucra.tech** is the web. An interconnected architecture linking systems engineering, Rust libraries, cybersecurity research, and distributed infrastructure.
+I'm an undergraduate Computer Engineering student at Vidyalankar Institute of Technology (VIT), Mumbai.
 
-Every node in this ecosystem represents deliberate engineering: making protocol boundaries, performance trade-offs, and verifiable design decisions visible.
+This website is my personal hub: a place to connect the projects I build, notes from my coursework, and the self-hosted services I run to understand systems from first principles.
+
+I prefer building things from scratch or working through real protocols rather than stitching together templates.
 
 <div class="home-actions">
   <a class="home-action primary" href="/projects/">Explore projects</a>
-  <a class="home-action" href="/research/">Research &amp; papers</a>
-  <a class="home-action" href="https://journal.seucra.tech" target="_blank" rel="noopener">Read the journal ↗</a>
+  <a class="home-action" href="/research/">Coursework &amp; research</a>
+  <a class="home-action" href="https://journal.seucra.tech" target="_blank" rel="noopener">Read my journal ↗</a>
   <a class="home-action" href="/connect/">Connect</a>
 </div>
 
 ---
 
-## Core Systems & Nodes
+## Projects I'm Building to Learn
 
 ### Vigilant
-Secure communication platform built on the Matrix ecosystem using Rust, WebAssembly, and custom self-hosted infrastructure.
+An ongoing personal project exploring secure communication using the Matrix ecosystem, Rust, WebAssembly, and a self-hosted Synapse server.
 → [/projects/vigilant/](/projects/vigilant/)
 
 ### Matrix SDK Bridge
-Published npm package (`@seucra/matrix-sdk-bridge`): a modular Rust-to-WebAssembly bridge exposing Matrix client capabilities.
+A small Rust-to-WebAssembly bridge published on npm (`@seucra/matrix-sdk-bridge`), extracted from Vigilant so browser JavaScript can interact with Matrix.
 → [/projects/matrix-sdk-bridge/](/projects/matrix-sdk-bridge/)
 
 ### Triton
-High-performance filesystem project detector and artifact classifier in Rust, built with multi-crate workspace architecture.
+A multi-crate Rust CLI utility experimenting with multi-threaded directory walks (Rayon), project root detection, and caching build artifacts with SQLite and BLAKE3.
 → [/projects/triton/](/projects/triton/)
 
-### Vulnerability Prioritization & Triage System (VTS)
-Machine learning triage pipeline, pre-scoring CVSS estimation, and publication-time exploitation prediction with reproducible DuckDB/FastAPI ETL.
+### Vulnerability Prioritization
+A collaborative academic study exploring how NVD disclosures, EPSS likelihoods, and DuckDB analytics can support practical vulnerability triage.
 → [/research/vulnerability-prioritization/](/research/vulnerability-prioritization/)
 
-### CyberShield (SIH 26184)
-Predictive analytics framework for financial cyber fraud interception and terminal cash-out forecasting (MHA / I4C CIS Division).
+### CyberShield (SIH26184)
+Our team’s submission for Smart India Hackathon (Problem Statement SIH26184), designing a pipeline to forecast cash-out points and apply partial account holds in cyber fraud cases.
 → [/projects/sih2026/](/projects/sih2026/)
 
 ### CipherLink
-Foundational secure messaging precursor that established the architectural requirements leading to the Matrix ecosystem pivot.
+An earlier personal attempt to build a secure messaging tool from scratch. It taught me how hard protocol engineering is and convinced me to adopt Matrix instead.
 → [/projects/cipherlink/](/projects/cipherlink/)
 
 ---
 
-## Dedicated Journal & Timeline
+## Detailed Notes & Writing
 
-All chronological milestone logs, step-by-step engineering journals, and deep-dive post-mortems live on the dedicated journal:
+For candid post-mortems, daily learning logs, and deep dives into things I've struggled with, I write on my dedicated journal:
 → [journal.seucra.tech ↗](https://journal.seucra.tech)

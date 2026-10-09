@@ -1,16 +1,16 @@
 <div class="seucra-home">
-  <!-- Hero Section: The Spider and the Web -->
+  <!-- Hero Section: Student Persona & Humble Web -->
   <section class="seucra-hero" aria-labelledby="home-title">
-    <p class="eyebrow">SEUCRA.TECH / THE ENGINEERING WEB</p>
+    <p class="eyebrow">SEUCRA.TECH / PERSONAL HUB &amp; NOTES</p>
     <div class="hero-grid">
       <div>
         <h1 id="home-title">Shams Tabrez Ahmed</h1>
-        <p class="hero-lede">I am the builder; this domain is the web. An interconnected architecture linking systems engineering, Rust libraries, cybersecurity research, and distributed infrastructure.</p>
-        <p class="hero-copy">Every node in this ecosystem represents deliberate engineering: making protocol boundaries, performance trade-offs, and verifiable design decisions visible.</p>
+        <p class="hero-lede">An undergraduate Computer Engineering student in Mumbai, learning backend systems, Rust, Linux, and cybersecurity from first principles.</p>
+        <p class="hero-copy">This site is my personal web: a quiet central hub where I connect the projects I build, notes from my coursework, and the self-hosted services I run to understand real-world engineering trade-offs.</p>
         <div class="home-actions">
           <a class="home-action primary" href="{{ "projects/" | relURL }}">Explore projects</a>
-          <a class="home-action" href="{{ "research/" | relURL }}">Research &amp; papers</a>
-          <a class="home-action" href="https://journal.seucra.tech" target="_blank" rel="noopener">Read the journal <span aria-hidden="true">↗</span></a>
+          <a class="home-action" href="{{ "research/" | relURL }}">Coursework &amp; research</a>
+          <a class="home-action" href="https://journal.seucra.tech" target="_blank" rel="noopener">Read my journal <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="hero-mark" aria-hidden="true">
@@ -18,124 +18,122 @@
         <div class="mark-node mark-node-b"></div>
         <div class="mark-node mark-node-c"></div>
         <svg viewBox="0 0 440 360" fill="none">
-          <!-- Concentric Web Geometry -->
-          <polygon points="220,30 380,95 380,265 220,330 60,265 60,95" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
-          <polygon points="220,70 330,115 330,245 220,290 110,245 110,115" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
-          <polygon points="220,110 280,135 280,225 220,250 160,225 160,135" stroke="currentColor" stroke-width="1.2" opacity="0.8"/>
-          <!-- Radial Spoke Lines connecting the web to center -->
-          <line x1="220" y1="30" x2="220" y2="330" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
-          <line x1="60" y1="95" x2="380" y2="265" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
-          <line x1="60" y1="265" x2="380" y2="95" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
-          <!-- Central Nexus -->
-          <circle cx="220" cy="180" r="16"/>
-          <circle cx="220" cy="180" r="6" fill="var(--seucra-primary)"/>
+          <!-- Geometric Connected Web -->
+          <polygon points="220,30 380,95 380,265 220,330 60,265 60,95" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+          <polygon points="220,70 330,115 330,245 220,290 110,245 110,115" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <polygon points="220,110 280,135 280,225 220,250 160,225 160,135" stroke="currentColor" stroke-width="1.2" opacity="0.7"/>
+          <line x1="220" y1="30" x2="220" y2="330" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+          <line x1="60" y1="95" x2="380" y2="265" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+          <line x1="60" y1="265" x2="380" y2="95" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+          <circle cx="220" cy="180" r="14" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          <circle cx="220" cy="180" r="5" fill="var(--seucra-primary)"/>
         </svg>
-        <p>nexus // core systems &amp; network</p>
+        <p>learn → build → document</p>
       </div>
     </div>
   </section>
 
-  <!-- Core Flagship Projects Section -->
+  <!-- Projects & Experiments Section -->
   <section class="home-section" aria-labelledby="focus-title">
     <div class="section-intro">
-      <p class="eyebrow">PRIMARY NODES</p>
-      <h2 id="focus-title">Flagship systems &amp; published software.</h2>
+      <p class="eyebrow">PRACTICAL WORK</p>
+      <h2 id="focus-title">Projects I’m building to learn.</h2>
     </div>
     <div class="focus-grid">
       <!-- Vigilant -->
       <a class="focus-card featured" href="{{ "projects/vigilant/" | relURL }}">
-        <span class="card-index">01 / FLAGSHIP SYSTEM</span>
+        <span class="card-index">01 / ONGOING PROJECT</span>
         <h3>Vigilant</h3>
-        <p>Secure communication platform built on the Matrix ecosystem using Rust, WebAssembly, and custom self-hosted infrastructure.</p>
-        <span class="card-link">Architecture record →</span>
+        <p>An ongoing project exploring secure communication using the Matrix ecosystem, Rust, WebAssembly, and a self-hosted Synapse server rather than reinventing cryptography.</p>
+        <span class="card-link">Project overview →</span>
       </a>
 
       <!-- Matrix SDK Bridge -->
       <a class="focus-card" href="{{ "projects/matrix-sdk-bridge/" | relURL }}">
-        <span class="card-index">02 / PUBLISHED PACKAGE</span>
+        <span class="card-index">02 / EXTRACTED LIBRARY</span>
         <h3>Matrix SDK Bridge</h3>
-        <p>Published npm package <code>@seucra/matrix-sdk-bridge</code>: a modular Rust-to-WebAssembly bridge exposing Matrix client capabilities.</p>
-        <span class="card-link">Library record →</span>
+        <p>A small Rust-to-WebAssembly bridge published on npm (<code>@seucra/matrix-sdk-bridge</code>), extracted from Vigilant so browser JavaScript can interact with the client cleanly.</p>
+        <span class="card-link">Library notes →</span>
       </a>
 
       <!-- Triton -->
       <a class="focus-card" href="{{ "projects/triton/" | relURL }}">
-        <span class="card-index">03 / SYSTEMS ENGINE</span>
+        <span class="card-index">03 / SYSTEMS EXPERIMENT</span>
         <h3>Triton</h3>
-        <p>High-performance filesystem project detector and artifact classifier in Rust, built with multi-crate workspace architecture.</p>
-        <span class="card-link">Systems record →</span>
+        <p>A multi-crate Rust CLI utility experimenting with multi-threaded directory walks (Rayon), project root detection, and caching build artifacts with SQLite and BLAKE3.</p>
+        <span class="card-link">System notes →</span>
       </a>
 
       <!-- VTS -->
       <a class="focus-card" href="{{ "research/vulnerability-prioritization/" | relURL }}">
-        <span class="card-index">04 / RESEARCH &amp; PAPER</span>
-        <h3>VTS Prioritization</h3>
-        <p>Machine learning triage pipeline and publication-time exploitation prediction integrating NVD, EPSS, and DuckDB analytics.</p>
-        <span class="card-link">Research paper →</span>
+        <span class="card-index">04 / COLLEGE STUDY</span>
+        <h3>Vulnerability Prioritization</h3>
+        <p>A collaborative academic project with college peers exploring how NVD disclosures, EPSS likelihoods, and DuckDB analytics can support practical vulnerability triage.</p>
+        <span class="card-link">Read paper summary →</span>
       </a>
 
-      <!-- CyberShield -->
+      <!-- CyberShield (SIH26184) -->
       <a class="focus-card" href="{{ "projects/sih2026/" | relURL }}">
-        <span class="card-index">05 / NATIONAL CYBER DEFENSE</span>
-        <h3>CyberShield (SIH26184)</h3>
-        <p>Predictive analytics and cash egress interception framework for financial cyber fraud mitigation (MHA / I4C CIS Division).</p>
-        <span class="card-link">Defense record →</span>
+        <span class="card-index">05 / HACKATHON (PS SIH26184)</span>
+        <h3>CyberShield</h3>
+        <p>Our team’s submission for Smart India Hackathon (Problem Statement SIH26184), designing a pipeline to forecast cash-out points and apply partial account holds in cyber fraud cases.</p>
+        <span class="card-link">Hackathon breakdown →</span>
       </a>
 
       <!-- CipherLink -->
       <a class="focus-card" href="{{ "projects/cipherlink/" | relURL }}">
-        <span class="card-index">06 / PROTOCOL FOUNDATION</span>
+        <span class="card-index">06 / RETROSPECTIVE</span>
         <h3>CipherLink</h3>
-        <p>The cryptographic messaging foundation whose architectural lessons guided the pivot to the open Matrix standard.</p>
-        <span class="card-link">Historical record →</span>
+        <p>An earlier personal attempt to write a secure messenger from scratch. It taught me how difficult protocol design is and convinced me to adopt Matrix instead.</p>
+        <span class="card-link">Retrospective notes →</span>
       </a>
     </div>
   </section>
 
-  <!-- Connected Subdomains & Infrastructure -->
+  <!-- Connected Services / Subdomains -->
   <section class="home-section" aria-labelledby="subdomains-title">
     <div class="section-intro">
-      <p class="eyebrow">TOPOLOGY</p>
-      <h2 id="subdomains-title">The connected subdomains.</h2>
+      <p class="eyebrow">INFRASTRUCTURE</p>
+      <h2 id="subdomains-title">Connected services I run.</h2>
     </div>
     <div class="network-grid">
       <a href="https://journal.seucra.tech" target="_blank" rel="noopener">
-        <span>SUBDOMAIN // JOURNAL</span>
+        <span>SUBDOMAIN // WRITING</span>
         <h3>journal.seucra.tech ↗</h3>
-        <p>The dedicated engineering journal housing chronological milestones, deep-dive architectural post-mortems, and technical study notes.</p>
+        <p>My public engineering journal where I write longer notes, step-by-step experiment logs, and reflections on mistakes and lessons learned.</p>
       </a>
       <a href="{{ "infrastructure/" | relURL }}">
-        <span>SUBDOMAIN // BOT GATEWAY</span>
+        <span>SUBDOMAIN // ROUTING</span>
         <h3>bot.seucra.tech</h3>
-        <p>Cloudflare Workers edge endpoint managing Telegram webhook routing and serverless operations with Cloudflare WAF shielding.</p>
+        <p>A simple Cloudflare Worker acting as an edge webhook listener for personal automation, sheltered behind Cloudflare firewall rules.</p>
       </a>
       <a href="{{ "infrastructure/" | relURL }}">
-        <span>SUBDOMAIN // OBJECT STORAGE</span>
+        <span>SUBDOMAIN // STORAGE</span>
         <h3>cdn.seucra.tech</h3>
-        <p>Global Cloudflare R2 content delivery network handling releases, build artifacts, and static distribution.</p>
+        <p>A Cloudflare R2 storage bucket used to store diagram assets, images, and experiment data with zero egress fees.</p>
       </a>
       <a href="https://sih-render.seucra.tech/" target="_blank" rel="noopener">
-        <span>SUBDOMAIN // LIVE API</span>
+        <span>SUBDOMAIN // DEMO API</span>
         <h3>sih-render.seucra.tech ↗</h3>
-        <p>Cloud API deployment serving real-time cash egress interception algorithms and analytical risk evaluations.</p>
+        <p>A small cloud deployment hosting the backend REST endpoints for our CyberShield (SIH26184) prototype evaluation.</p>
       </a>
     </div>
   </section>
 
-  <!-- Dedicated Writing & Timeline Section -->
+  <!-- Journal & Reflection Note -->
   <section class="home-section home-writing" aria-labelledby="writing-title">
     <div>
-      <p class="eyebrow">DEDICATED JOURNAL &amp; TIMELINE</p>
-      <h2 id="writing-title">Chronological logs live in the journal.</h2>
-      <p>The main portfolio holds high-level architecture and verified evidence. For step-by-step development logs, timeline milestones, DSA journeys, and deep technical reflections, visit the dedicated journal on <a href="https://journal.seucra.tech" target="_blank" rel="noopener">journal.seucra.tech</a>.</p>
+      <p class="eyebrow">STUDY LOGS &amp; JOURNALS</p>
+      <h2 id="writing-title">Detailed writing lives in the journal.</h2>
+      <p>I keep this portfolio concise so anyone can quickly see what I’ve worked on. For honest write-ups, daily progress, and deep dives into things I’ve struggled with, I post on <a href="https://journal.seucra.tech" target="_blank" rel="noopener">journal.seucra.tech</a>.</p>
     </div>
     <a class="home-action" href="https://journal.seucra.tech" target="_blank" rel="noopener">Visit journal.seucra.tech <span aria-hidden="true">↗</span></a>
   </section>
 
-  <!-- Footer Navigation -->
+  <!-- Footer Links -->
   <section class="home-section home-footer-cta" aria-labelledby="more-title">
-    <p class="eyebrow">ENGINEERING PROOF</p>
-    <h2 id="more-title">Projects are the evidence. Documentation explains the reasoning.</h2>
+    <p class="eyebrow">SITE MAP</p>
+    <h2 id="more-title">Learn by building, understand by documenting.</h2>
     <div class="text-links">
       <a href="{{ "about/" | relURL }}">About</a>
       <a href="{{ "projects/" | relURL }}">Projects</a>
